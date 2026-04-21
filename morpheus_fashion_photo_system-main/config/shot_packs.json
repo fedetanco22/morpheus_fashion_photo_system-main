@@ -1,0 +1,135 @@
+{
+  "packs": {
+    "auto": {
+      "name": "Auto",
+      "prompt_fragment": "automatic shot selection based on intent and assets, prioritizing garment readability and identity fidelity",
+      "notes": "Use when you want the system to choose the most suitable framing."
+    },
+    "aerial_drone_wide": {
+      "name": "Aerial drone wide",
+      "prompt_fragment": "aerial drone wide establishing shot from high altitude, subject readable with environment context, stable horizon, cinematic scale",
+      "notes": "Best for location storytelling and arrivals; ensure subject still readable for ads."
+    },
+    "beauty_close_up": {
+      "name": "Beauty close up",
+      "prompt_fragment": "tight beauty close-up, face fills most of the frame, clean background separation, precise skin and makeup detail, stable proportions",
+      "notes": "For makeup, eyewear, jewelry, and portrait-driven luxury."
+    },
+    "bird_eye_top_down": {
+      "name": "Bird eye top down",
+      "prompt_fragment": "top-down bird’s-eye view, graphic composition, clear edges and spacing, controlled perspective",
+      "notes": "Useful for flat-lay adjacent scenes, product layouts, and strong geometry."
+    },
+    "close_up": {
+      "name": "Close up",
+      "prompt_fragment": "close-up framing with strong subject emphasis, shallow-to-moderate depth of field, clear texture rendering",
+      "notes": "Use for accessories, fabric texture, branding on garments, hands, and details."
+    },
+    "detail_macro": {
+      "name": "Detail macro",
+      "prompt_fragment": "macro detail shot focused on a single garment or accessory area, stitching and material micro-texture visible, controlled specular highlights",
+      "notes": "For material proof and luxury craft cues."
+    },
+    "extreme_close_up": {
+      "name": "Extreme close up",
+      "prompt_fragment": "extreme close-up on a single facial or product feature, minimal context, high fidelity micro-detail, stable focus plane",
+      "notes": "For eye makeup, eyewear fit points, logos, zippers, seams."
+    },
+    "full_body_wide": {
+      "name": "Full body wide",
+      "prompt_fragment": "full-body wide shot, head-to-toe visible with extra negative space, environment present but non-distracting, proportions preserved",
+      "notes": "Great for lifestyle and location-based fashion."
+    },
+    "full_length": {
+      "name": "Full length",
+      "prompt_fragment": "full-length head-to-toe shot, subject centered, silhouette and fit clearly readable, minimal perspective distortion",
+      "notes": "Core fashion staple for fit validation and outfit visibility."
+    },
+    "high_angle": {
+      "name": "High angle",
+      "prompt_fragment": "high-angle shot looking down slightly, flattering yet realistic proportions, clear outfit readability",
+      "notes": "Use carefully to avoid shortening legs or distorting fit lines."
+    },
+    "low_angle_hero": {
+      "name": "Low angle hero",
+      "prompt_fragment": "low-angle hero shot, subject appears powerful, clean vertical lines, controlled distortion, strong presence",
+      "notes": "Best for campaign impact, not strict fit proof."
+    },
+    "medium_full": {
+      "name": "Medium full",
+      "prompt_fragment": "medium-full shot from head to mid-calf, clear garment fit and silhouette, balanced perspective, ad-friendly readability",
+      "notes": "A frequent fashion editorial choice when full length is not required."
+    },
+    "medium_shot": {
+      "name": "Medium shot",
+      "prompt_fragment": "medium shot from waist up, clear upper garment fit and accessories, natural perspective, clean separation",
+      "notes": "Great for tops, jackets, bags, eyewear; keeps identity readable."
+    },
+    "overhead": {
+      "name": "Overhead",
+      "prompt_fragment": "overhead shot from above, structured composition, controlled shadows, clean spacing and alignment",
+      "notes": "Similar to bird’s-eye but can be closer and more intimate."
+    },
+    "product_flat_lay": {
+      "name": "Product flat lay",
+      "prompt_fragment": "flat-lay product shot photographed from directly above, clean arrangement, consistent spacing, true-to-color rendering, minimal shadows",
+      "notes": "Use for garments or accessories laid on surface, not worn."
+    },
+    "product_on_mannequin": {
+      "name": "Product on mannequin",
+      "prompt_fragment": "product photographed on a neutral mannequin, accurate drape and structure, clean background, true-to-color, no distracting styling",
+      "notes": "For e-commerce proof when talent is not needed."
+    },
+    "profile_side": {
+      "name": "Profile side",
+      "prompt_fragment": "side profile shot, clear silhouette, clean background separation, controlled perspective, outfit lines readable",
+      "notes": "Excellent for outerwear, eyewear side fit, and silhouette emphasis."
+    },
+    "three_quarter": {
+      "name": "Three quarter",
+      "prompt_fragment": "three-quarter shot from knees up, slight angle to camera, dynamic but controlled fashion framing, silhouette readable",
+      "notes": "One of the most used editorial framings for fashion."
+    },
+    "two_shot": {
+      "name": "Two shot",
+      "prompt_fragment": "two-shot framing with two subjects, balanced composition, consistent lighting and perspective, clear outfit readability for both",
+      "notes": "Use only when you actually have multiple talents; otherwise avoid."
+    },
+    "ultra_wide_establishing": {
+      "name": "Ultra wide establishing",
+      "prompt_fragment": "ultra-wide establishing shot with strong environment context, subject still clearly identifiable, straight lines controlled, cinematic scale",
+      "notes": "For narrative and location; ensure brand priorities remain readable."
+    },
+    "waist_up": {
+      "name": "Waist up",
+      "prompt_fragment": "waist-up framing, face and upper garments prioritized, accessories readable, natural perspective, clean background separation",
+      "notes": "Efficient for social ads, tops, bags, eyewear."
+    },
+    "grid_2x2": {
+      "name": "Grid 2x2",
+      "prompt_fragment": "single image contact sheet arranged in a 2x2 grid with consistent framing across all frames",
+      "notes": "Single image composed of four equally sized frames arranged in a 2x2 grid, commonly used as a contact sheet to compare poses, expressions, or variations with consistent lighting and camera setup."
+    },
+    "grid_2x3": {
+      "name": "Grid 2x3",
+      "prompt_fragment": "single image contact sheet arranged in a 2x3 grid with uniform framing and lighting",
+      "notes": "Single image composed of six frames arranged in two columns and three rows, useful for showcasing sequential actions or multiple controlled variations while preserving visual consistency."
+    },
+    "grid_3x3": {
+      "name": "Grid 3x3",
+      "prompt_fragment": "single image contact sheet arranged in a 3x3 grid showing controlled variations with consistent setup",
+      "notes": "Single image composed of nine frames arranged in a 3x3 grid, ideal for comprehensive character, pose, or expression studies with strict consistency."
+    },
+    "horizontal_triptych": {
+      "name": "Horizontal triptych",
+      "prompt_fragment": "single image composed of three horizontal frames with consistent scale and lighting",
+      "notes": "Three frames arranged horizontally in a single image, often used in fashion editorials to show progression or subtle motion while maintaining continuity."
+    },
+    "vertical_triptych": {
+      "name": "Vertical triptych",
+      "prompt_fragment": "single image composed of three vertical frames with consistent framing and proportions",
+      "notes": "Three frames stacked vertically, useful for mobile-first layouts and sequential storytelling with a strong vertical rhythm."
+    }
+  },
+  "default": "auto"
+}

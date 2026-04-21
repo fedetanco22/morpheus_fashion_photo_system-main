@@ -1,0 +1,385 @@
+{
+  "packs": {
+    "auto": {
+      "id": "auto",
+      "name": "Auto",
+      "description": "Lascia decidere a Gemini in base a brief, riferimenti e vincoli di leggibilità e fedeltà",
+      "type": "auto",
+      "mood": "context-driven",
+      "contrast": "context-driven",
+      "color_temperature": "context-driven",
+      "prompt_fragment": "lit with coherent, scene-appropriate lighting chosen to match the brief and references while preserving accurate garment colors and readable fit lines"
+    },
+    "beauty_clamshell": {
+      "id": "beauty_clamshell",
+      "name": "Beauty clamshell",
+      "description": "Two-source top and bottom beauty setup (clamshell) for smooth skin, clean catchlights, minimal under-eye shadow; ideal for beauty and luxury fashion.",
+      "type": "artificial",
+      "mood": "flattering clean",
+      "contrast": "low",
+      "color_temperature": "neutral daylight",
+      "prompt_fragment": "illuminated with classic clamshell beauty lighting for smooth contours, clean catchlights, and minimal harsh shadows"
+    },
+    "beauty_dish": {
+      "id": "beauty_dish",
+      "name": "Beauty dish",
+      "description": "Centered beauty dish key with controlled falloff; crisp but flattering, strong cheekbone definition without harshness.",
+      "type": "artificial",
+      "mood": "polished editorial",
+      "contrast": "medium",
+      "color_temperature": "neutral daylight",
+      "prompt_fragment": "lit with a centered beauty-dish key for crisp yet flattering facial definition and controlled shadow falloff"
+    },
+    "blue_hour_ambient": {
+      "id": "blue_hour_ambient",
+      "name": "Blue hour ambient",
+      "description": "Twilight blue ambient with soft contrast; calm, premium, slightly melancholic, great for winter narratives.",
+      "type": "natural",
+      "mood": "cool contemplative",
+      "contrast": "low-medium",
+      "color_temperature": "cool blue",
+      "prompt_fragment": "captured in blue-hour ambient light with cool tones, soft contrast, and calm premium mood"
+    },
+    "butterfly_lighting": {
+      "id": "butterfly_lighting",
+      "name": "Butterfly lighting",
+      "description": "Top-front key creates butterfly shadow under nose; classic beauty/fashion look with sculpted symmetry.",
+      "type": "artificial",
+      "mood": "iconic beauty",
+      "contrast": "medium",
+      "color_temperature": "neutral daylight",
+      "prompt_fragment": "lit with butterfly lighting to sculpt facial symmetry while keeping the look clean and editorial"
+    },
+    "cinema_rembrandt": {
+      "id": "cinema_rembrandt",
+      "name": "Cinema rembrandt",
+      "description": "45-degree key creating a Rembrandt triangle; cinematic depth with elegant shadow structure, still readable for fashion.",
+      "type": "artificial",
+      "mood": "cinematic sculpted",
+      "contrast": "medium-high",
+      "color_temperature": "neutral to warm",
+      "prompt_fragment": "lit with controlled Rembrandt key lighting for cinematic depth and sculpted shadows while preserving garment readability"
+    },
+    "cinema_rim_backlight": {
+      "id": "cinema_rim_backlight",
+      "name": "Cinema rim backlight",
+      "description": "Back/rim light to separate subject from background; premium contouring on hair and silhouette.",
+      "type": "artificial",
+      "mood": "separated premium",
+      "contrast": "medium",
+      "color_temperature": "neutral",
+      "prompt_fragment": "shaped with a clean rim backlight to separate the subject and outline the silhouette with controlled highlights"
+    },
+    "cinema_split": {
+      "id": "cinema_split",
+      "name": "Cinema split",
+      "description": "Side key splits face into light/shadow; strong character, graphic mood, use with restraint for luxury.",
+      "type": "artificial",
+      "mood": "graphic dramatic",
+      "contrast": "high",
+      "color_temperature": "neutral",
+      "prompt_fragment": "illuminated with split lighting for a bold, graphic light-shadow divide and strong character"
+    },
+    "dramatic_spot_key": {
+      "id": "dramatic_spot_key",
+      "name": "Dramatic spot key",
+      "description": "Focused spot key with falloff; theatrical mood, isolates subject, best for awareness/editorial not fit proof.",
+      "type": "artificial",
+      "mood": "theatrical",
+      "contrast": "high",
+      "color_temperature": "neutral",
+      "prompt_fragment": "lit with a focused spot key creating controlled falloff and a dramatic, isolated subject look"
+    },
+    "foggy_diffusion": {
+      "id": "foggy_diffusion",
+      "name": "Foggy diffusion",
+      "description": "Atmospheric diffusion (mist/fog) softens highlights and deepens depth; cinematic winter mood.",
+      "type": "mixed",
+      "mood": "dreamy atmospheric",
+      "contrast": "low",
+      "color_temperature": "cool neutral",
+      "prompt_fragment": "lit through light atmospheric diffusion for softened highlights, gentle contrast, and cinematic depth"
+    },
+    "gobo_shadow_pattern": {
+      "id": "gobo_shadow_pattern",
+      "name": "Gobo shadow pattern",
+      "description": "Patterned shadows via gobo; cinematic texture on background while keeping garments readable.",
+      "type": "artificial",
+      "mood": "stylized cinematic",
+      "contrast": "medium",
+      "color_temperature": "neutral",
+      "prompt_fragment": "lit with a subtle gobo pattern adding background texture while keeping the subject and garments clean and readable"
+    },
+    "golden_hour_backlit": {
+      "id": "golden_hour_backlit",
+      "name": "Golden hour backlit",
+      "description": "Low warm sun behind subject; luminous rim, gentle flare control, romantic but modern.",
+      "type": "natural",
+      "mood": "warm luminous",
+      "contrast": "medium",
+      "color_temperature": "warm golden",
+      "prompt_fragment": "backlit by low golden-hour sun creating a soft luminous rim and gentle highlight rolloff"
+    },
+    "golden_hour_coastal": {
+      "id": "golden_hour_coastal",
+      "name": "Golden hour coastal",
+      "description": "Warm golden hour light typical of coastal settings",
+      "type": "natural",
+      "mood": "warm romantic",
+      "contrast": "medium soft",
+      "color_temperature": "warm golden",
+      "prompt_fragment": "bathed in warm golden hour coastal sunlight with soft romantic tones"
+    },
+    "hard_sun_noon": {
+      "id": "hard_sun_noon",
+      "name": "Hard sun noon",
+      "description": "Direct high sun with crisp shadows and high contrast; editorial harsh daylight, exposes texture and structure.",
+      "type": "natural",
+      "mood": "harsh modern",
+      "contrast": "high",
+      "color_temperature": "neutral daylight",
+      "prompt_fragment": "shot in hard noon sunlight with crisp, defined shadows that emphasize structure, texture, and form"
+    },
+    "high_contrast_chiaroscuro": {
+      "id": "high_contrast_chiaroscuro",
+      "name": "High contrast chiaroscuro",
+      "description": "Strong chiaroscuro with deep shadows and bright highlights; artful, cinematic, use when intent allows.",
+      "type": "artificial",
+      "mood": "artful dramatic",
+      "contrast": "high",
+      "color_temperature": "neutral to warm",
+      "prompt_fragment": "lit with controlled chiaroscuro lighting for strong depth, sculpted highlights, and dramatic shadow structure"
+    },
+    "industrial_fluorescent": {
+      "id": "industrial_fluorescent",
+      "name": "Industrial fluorescent",
+      "description": "Cool industrial fluorescents with slight green bias; utilitarian realism, warehouse/backstage vibe.",
+      "type": "artificial practical",
+      "mood": "raw industrial",
+      "contrast": "medium",
+      "color_temperature": "cool fluorescent",
+      "prompt_fragment": "lit by industrial fluorescent practicals with cool tone and subtle green bias for utilitarian realism"
+    },
+    "mixed_daylight_tungsten": {
+      "id": "mixed_daylight_tungsten",
+      "name": "Mixed daylight and tungsten",
+      "description": "Deliberate cold daylight fill with warm tungsten practicals; classic ‘cool vs warm’ narrative contrast.",
+      "type": "mixed",
+      "mood": "cinematic contrast",
+      "contrast": "medium-high color contrast",
+      "color_temperature": "mixed cool/warm",
+      "prompt_fragment": "lit with intentional mixed lighting: cool daylight fill against warm tungsten practical accents for a refined cold-warm contrast"
+    },
+    "mixed_practical": {
+      "id": "mixed_practical",
+      "name": "Mixed practical lights",
+      "description": "Combination of ambient and practical light sources",
+      "type": "mixed practical",
+      "mood": "authentic atmospheric",
+      "contrast": "varied",
+      "color_temperature": "mixed",
+      "prompt_fragment": "lit by a mix of ambient and practical light sources for authentic atmosphere"
+    },
+    "moonlit_night": {
+      "id": "moonlit_night",
+      "name": "Moonlit night",
+      "description": "Cool moonlight feel with soft shadows; minimalist nocturne mood without looking like day-for-night.",
+      "type": "natural",
+      "mood": "quiet nocturne",
+      "contrast": "low",
+      "color_temperature": "cool",
+      "prompt_fragment": "lit by a moonlit night ambience with cool tones and soft, believable shadow gradients"
+    },
+    "natural_window": {
+      "id": "natural_window",
+      "name": "Natural window light",
+      "description": "Soft directional light from large window",
+      "type": "natural indoor",
+      "mood": "intimate natural",
+      "contrast": "medium soft",
+      "color_temperature": "neutral daylight",
+      "prompt_fragment": "illuminated by soft natural window light creating gentle directional shadows"
+    },
+    "neon_signs_night": {
+      "id": "neon_signs_night",
+      "name": "Neon signs night",
+      "description": "Urban neon motivated lighting; saturated edges, reflective highlights, modern street editorial.",
+      "type": "mixed practical",
+      "mood": "urban modern",
+      "contrast": "medium",
+      "color_temperature": "mixed",
+      "prompt_fragment": "lit by motivated neon signage and street practicals creating modern color contrast and reflective highlights"
+    },
+    "night_snow_warm": {
+      "id": "night_snow_warm",
+      "name": "Night snow + warm interior",
+      "description": "Cold exterior snow with warm interior glow contrast",
+      "type": "mixed",
+      "mood": "cozy contrast",
+      "contrast": "high color contrast",
+      "color_temperature": "mixed cold/warm",
+      "prompt_fragment": "lit by the contrast of cold blue snow light and warm interior glow"
+    },
+    "off_camera_flash_bounce": {
+      "id": "off_camera_flash_bounce",
+      "name": "Off camera flash bounce",
+      "description": "Bounced flash for soft, natural-looking indoor light; controlled shadows, realistic skin.",
+      "type": "artificial",
+      "mood": "natural indoor",
+      "contrast": "medium soft",
+      "color_temperature": "neutral",
+      "prompt_fragment": "illuminated with bounced off-camera flash for soft, natural indoor light and controlled shadows"
+    },
+    "on_camera_flash_clean": {
+      "id": "on_camera_flash_clean",
+      "name": "On camera flash clean",
+      "description": "Direct on-camera flash: crisp, shadowed background, snapshot editorial energy; avoids blur and keeps texture.",
+      "type": "artificial",
+      "mood": "flash editorial",
+      "contrast": "high",
+      "color_temperature": "neutral",
+      "prompt_fragment": "shot with clean on-camera flash for crisp texture, sharp details, and punchy editorial snapshot energy"
+    },
+    "overcast_city": {
+      "id": "overcast_city",
+      "name": "Overcast city",
+      "description": "Soft diffused light from overcast urban sky",
+      "type": "natural",
+      "mood": "neutral sophisticated",
+      "contrast": "low soft",
+      "color_temperature": "cool neutral",
+      "prompt_fragment": "photographed under soft overcast city light with even diffused illumination"
+    },
+    "overcast_softbox_sky": {
+      "id": "overcast_softbox_sky",
+      "name": "Overcast softbox sky",
+      "description": "Bright overcast acts like a giant softbox; ultra-even skin and fabric, great for fit proof outdoors.",
+      "type": "natural",
+      "mood": "clean neutral",
+      "contrast": "low",
+      "color_temperature": "cool neutral",
+      "prompt_fragment": "photographed under bright overcast light acting like a giant softbox for even exposure and clear fit lines"
+    },
+    "rain_wet_reflections": {
+      "id": "rain_wet_reflections",
+      "name": "Rain wet reflections",
+      "description": "Wet surfaces and practical reflections; night rain mood with controlled specular highlights.",
+      "type": "mixed practical",
+      "mood": "moody reflective",
+      "contrast": "high",
+      "color_temperature": "mixed",
+      "prompt_fragment": "lit by night practicals reflecting off wet surfaces, creating controlled specular highlights and cinematic rain atmosphere"
+    },
+    "ringlight_beauty": {
+      "id": "ringlight_beauty",
+      "name": "Ringlight beauty",
+      "description": "Ring light with circular catchlights; flat, modern beauty look, useful for e-commerce clarity if restrained.",
+      "type": "artificial",
+      "mood": "clean modern",
+      "contrast": "low",
+      "color_temperature": "neutral",
+      "prompt_fragment": "lit with a controlled ring-light beauty setup for even illumination, clean detail, and modern catchlights"
+    },
+    "snowfall_street_mixed": {
+      "id": "snowfall_street_mixed",
+      "name": "Snowfall street mixed",
+      "description": "Falling snow catching light from street practicals; cold ambience with warm accents; ideal for winter narrative luxury.",
+      "type": "mixed",
+      "mood": "winter narrative",
+      "contrast": "medium-high color contrast",
+      "color_temperature": "mixed cool/warm",
+      "prompt_fragment": "lit by cold ambient night light and warm street practicals that catch the falling snow for a refined winter narrative"
+    },
+    "soft_toplight_overhead": {
+      "id": "soft_toplight_overhead",
+      "name": "Soft toplight overhead",
+      "description": "Large overhead soft source; premium catalog/editorial, consistent across poses, emphasizes drape without harsh face shadow.",
+      "type": "artificial",
+      "mood": "premium neutral",
+      "contrast": "low-medium",
+      "color_temperature": "neutral daylight",
+      "prompt_fragment": "lit with a large soft overhead source for consistent exposure, clean drape visibility, and minimal harsh shadows"
+    },
+    "street_sodium_vapor": {
+      "id": "street_sodium_vapor",
+      "name": "Street sodium vapor",
+      "description": "Sodium-vapor streetlight look: warm amber cast, gritty realism, controlled for fashion readability.",
+      "type": "artificial practical",
+      "mood": "gritty urban",
+      "contrast": "medium",
+      "color_temperature": "warm sodium",
+      "prompt_fragment": "lit by sodium-vapor streetlights with warm amber cast, controlled exposure, and realistic night atmosphere"
+    },
+    "studio_crosslight": {
+      "id": "studio_crosslight",
+      "name": "Studio crosslight",
+      "description": "Two opposing soft sources for even body illumination; great for full-body fit and texture proof.",
+      "type": "artificial",
+      "mood": "clarity first",
+      "contrast": "low",
+      "color_temperature": "neutral daylight",
+      "prompt_fragment": "lit with soft cross-lighting to evenly illuminate the full body and clearly reveal fit, seams, and texture"
+    },
+    "studio_edge_kicker": {
+      "id": "studio_edge_kicker",
+      "name": "Studio edge kicker",
+      "description": "Key plus subtle kicker edge light; premium shape definition without over-stylizing.",
+      "type": "artificial",
+      "mood": "premium shaped",
+      "contrast": "medium",
+      "color_temperature": "neutral",
+      "prompt_fragment": "lit with a clean key plus subtle edge kicker to add premium shape definition while staying restrained"
+    },
+    "studio_high_key": {
+      "id": "studio_high_key",
+      "name": "Studio high key",
+      "description": "Bright, even studio lighting with minimal shadows",
+      "type": "artificial",
+      "mood": "clean bright",
+      "contrast": "low",
+      "color_temperature": "neutral daylight",
+      "prompt_fragment": "lit with bright high-key studio lighting creating an even clean illumination"
+    },
+    "studio_low_key": {
+      "id": "studio_low_key",
+      "name": "Studio low key",
+      "description": "Dramatic studio lighting with deep shadows",
+      "type": "artificial",
+      "mood": "dramatic moody",
+      "contrast": "high",
+      "color_temperature": "neutral to warm",
+      "prompt_fragment": "illuminated with dramatic low-key studio lighting and deep sculptural shadows"
+    },
+    "studio_three_point": {
+      "id": "studio_three_point",
+      "name": "Studio three point",
+      "description": "Classic key, fill, hair/back light; reliable commercial polish, clear separation, consistent for ads.",
+      "type": "artificial",
+      "mood": "commercial clean",
+      "contrast": "medium",
+      "color_temperature": "neutral daylight",
+      "prompt_fragment": "lit with classic three-point studio lighting for controlled shadows, clean separation, and consistent commercial polish"
+    },
+    "tungsten_practical_warm": {
+      "id": "tungsten_practical_warm",
+      "name": "Tungsten practical warm",
+      "description": "Warm practical lamps as primary motivation; cozy interior feel, amber highlights, realistic falloff.",
+      "type": "artificial practical",
+      "mood": "cozy narrative",
+      "contrast": "medium",
+      "color_temperature": "warm tungsten",
+      "prompt_fragment": "lit primarily by warm practical tungsten sources with believable falloff and cozy amber highlights"
+    },
+    "window_side_key": {
+      "id": "window_side_key",
+      "name": "Window side key",
+      "description": "Single large window side key with soft falloff; intimate realism, gentle directional shadow, editorial calm.",
+      "type": "natural indoor",
+      "mood": "intimate realistic",
+      "contrast": "medium soft",
+      "color_temperature": "neutral daylight",
+      "prompt_fragment": "illuminated by a large side window key for gentle directional shadows and intimate editorial realism"
+    }
+  },
+  "default": "auto"
+}

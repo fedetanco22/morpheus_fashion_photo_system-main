@@ -1,0 +1,55 @@
+{
+  "intents": {
+    "auto": {
+      "id": "auto",
+      "name": "Auto",
+      "description": "Let Gemini choose the most appropriate intent from brief and target",
+      "priority_focus": ["auto_select"],
+      "fit_strictness": "auto",
+      "style_emphasis": "auto",
+      "environment_importance": "auto",
+      "prompt_modifier": "choose the most appropriate intent based on the brief and target, then set intent_applied explicitly in the output; if the brief implies fit proof, readability, construction details, or trust building, prefer consideration; if it implies aspirational mood and brand storytelling, prefer awareness; if it implies ad ready hierarchy and immediate product clarity, prefer conversion; if it implies community, lifestyle continuity, and brand world immersion, prefer retention"
+    },
+    "awareness": {
+      "id": "awareness",
+      "name": "Awareness",
+      "description": "Brand awareness campaigns - emotional, aspirational",
+      "priority_focus": ["brand_mood", "visual_impact", "emotional_resonance"],
+      "fit_strictness": "medium",
+      "style_emphasis": "high",
+      "environment_importance": "high",
+      "prompt_modifier": "creating an aspirational brand moment that evokes emotional connection, with a single hero image feel, strong mood and atmosphere, while preserving exact talent identity and exact garments, keeping the outfit readable at mobile scale without turning the composition into proof or contact sheet unless explicitly requested"
+    },
+    "consideration": {
+      "id": "consideration",
+      "name": "Consideration",
+      "description": "Fit and proof images - product focused, trust building",
+      "priority_focus": ["fit_accuracy", "garment_detail", "product_clarity"],
+      "fit_strictness": "very_high",
+      "style_emphasis": "medium",
+      "environment_importance": "low",
+      "prompt_modifier": "showcasing accurate fit and garment details with clarity for informed consideration, prioritizing readability of seams, hems, closures, and fabric behavior, using controlled fit preserving poses only, avoiding poses or cropping that hide key fit zones, keeping environment minimal and non distracting"
+    },
+    "conversion": {
+      "id": "conversion",
+      "name": "Conversion",
+      "description": "Performance ads - clear call to action, product focus",
+      "priority_focus": ["product_visibility", "clear_presentation", "purchase_appeal"],
+      "fit_strictness": "high",
+      "style_emphasis": "medium",
+      "environment_importance": "low",
+      "prompt_modifier": "presenting the product with maximum clarity and purchase appeal, with clean hierarchy and ad ready framing, keeping the outfit and key product features instantly understandable at mobile scale, minimizing visual clutter, allowing branding overlay only if enabled by branding settings"
+    },
+    "retention": {
+      "id": "retention",
+      "name": "Retention",
+      "description": "Loyalty and engagement - lifestyle, brand world",
+      "priority_focus": ["brand_lifestyle", "emotional_connection", "aspirational_world"],
+      "fit_strictness": "medium",
+      "style_emphasis": "high",
+      "environment_importance": "high",
+      "prompt_modifier": "immersing the viewer in the brand lifestyle world for lasting connection, emphasizing continuity, belonging, and repeatable brand atmosphere, with natural candid energy while preserving exact talent identity and exact garments, keeping the environment meaningful but never distracting from the outfit"
+    }
+  },
+  "default": "auto"
+}

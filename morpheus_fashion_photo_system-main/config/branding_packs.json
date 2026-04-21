@@ -1,0 +1,50 @@
+{
+  "packs": {
+    "logo_none": {
+      "id": "logo_none",
+      "name": "No Logo",
+      "description": "No logo placement in the image",
+      "placement": "none",
+      "size": "none",
+      "opacity": "none",
+      "prompt_fragment": ""
+    },
+    "logo_discreet_lower": {
+      "id": "logo_discreet_lower",
+      "name": "Logo Discreet Lower Safe Area",
+      "description": "Small discreet logo in lower safe area",
+      "placement": "lower right corner safe area",
+      "size": "small discreet",
+      "opacity": "subtle",
+      "prompt_fragment": "with a small discreet brand logo positioned in the lower right safe area"
+    },
+    "logo_top_corner": {
+      "id": "logo_top_corner",
+      "name": "Logo Top Corner",
+      "description": "Logo placement in top corner",
+      "placement": "top right corner",
+      "size": "medium",
+      "opacity": "visible",
+      "prompt_fragment": "featuring the brand logo in the top right corner"
+    },
+    "logo_center_watermark": {
+      "id": "logo_center_watermark",
+      "name": "Logo Center Watermark",
+      "description": "Subtle centered watermark logo",
+      "placement": "center",
+      "size": "large subtle",
+      "opacity": "watermark 20%",
+      "prompt_fragment": "with a subtle centered brand watermark overlay"
+    },
+    "logo_integrated": {
+      "id": "logo_integrated",
+      "name": "Logo Integrated Scene",
+      "description": "Logo naturally integrated into the scene",
+      "placement": "scene integrated",
+      "size": "contextual",
+      "opacity": "natural",
+      "prompt_fragment": "with the brand logo naturally integrated into the scene composition"
+    }
+  },
+  "default": "logo_discreet_lower"
+}

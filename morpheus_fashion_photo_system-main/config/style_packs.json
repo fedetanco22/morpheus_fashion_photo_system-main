@@ -1,0 +1,95 @@
+{
+  "packs": {
+    "style_packs": [
+      {
+        "id": "auto",
+        "name": "Auto",
+        "description": "Leaves stylistic decisions to the system. The model infers the most coherent visual language based on intent, camera, lens, film texture, and color science without forcing a predefined stylistic bias.",
+        "visual_behavior": "adaptive, non-invasive",
+        "use_case": "General purpose, early exploration, balanced outputs",
+        "output_character": "coherent, neutral, intent-driven"
+      },
+      {
+        "id": "premium_restraint",
+        "name": "Premium restraint",
+        "description": "Understated luxury with disciplined visual control. Avoids excess styling, prioritizing material quality, silhouette clarity, and quiet confidence.",
+        "visual_behavior": "controlled, minimal, elegant",
+        "use_case": "Luxury fashion, Prada-style campaigns, high-end consideration visuals",
+        "output_character": "refined, timeless, confident"
+      },
+      {
+        "id": "editorial_precision",
+        "name": "Editorial precision",
+        "description": "High-end fashion editorial language focused on sharpness, proportion, and intentional framing. Every element feels deliberate and composed.",
+        "visual_behavior": "precise, graphic, intentional",
+        "use_case": "Magazine editorials, lookbooks, designer storytelling",
+        "output_character": "authoritative, modern, fashion-forward"
+      },
+      {
+        "id": "cinematic_realism",
+        "name": "Cinematic realism",
+        "description": "Narrative-driven realism inspired by contemporary cinema. Emphasizes natural light behavior, spatial depth, and emotional presence without theatrical exaggeration.",
+        "visual_behavior": "observational, immersive",
+        "use_case": "Narrative fashion films, lifestyle campaigns, story-based ads",
+        "output_character": "authentic, atmospheric, emotionally grounded"
+      },
+      {
+        "id": "cinematic_memory",
+        "name": "Cinematic memory",
+        "description": "Evokes memory, nostalgia, and emotional residue. Soft contrast, organic imperfections, and film-like behavior suggest lived moments rather than staged scenes.",
+        "visual_behavior": "imperfect, evocative, temporal",
+        "use_case": "Heritage brands, emotional storytelling, archive-inspired visuals",
+        "output_character": "nostalgic, intimate, human"
+      },
+      {
+        "id": "campaign_hero",
+        "name": "Campaign hero",
+        "description": "Bold, iconic imagery designed to anchor a campaign. Strong subject presence, clear hierarchy, and immediate visual impact.",
+        "visual_behavior": "assertive, high-impact",
+        "use_case": "Main campaign visuals, billboards, brand hero shots",
+        "output_character": "powerful, aspirational, unmistakable"
+      },
+      {
+        "id": "product_truth",
+        "name": "Product truth",
+        "description": "Objective, honest visual language focused on fit, material behavior, and real-world usability. Style serves clarity, not spectacle.",
+        "visual_behavior": "neutral, descriptive",
+        "use_case": "Fit proof, material proof, consideration-stage visuals",
+        "output_character": "trustworthy, informative, precise"
+      },
+      {
+        "id": "clean_commercial",
+        "name": "Clean commercial",
+        "description": "Modern commercial clarity with polished execution. Balanced lighting, clean compositions, and accessible aesthetics.",
+        "visual_behavior": "clean, optimized",
+        "use_case": "E-commerce, digital ads, product listings",
+        "output_character": "clear, efficient, professional"
+      },
+      {
+        "id": "street_authentic",
+        "name": "Street authentic",
+        "description": "Documentary-inspired street language. Imperfect framing, real environments, and candid energy dominate over polish.",
+        "visual_behavior": "raw, spontaneous",
+        "use_case": "Street style, youth culture, urban fashion narratives",
+        "output_character": "real, contemporary, alive"
+      },
+      {
+        "id": "archive_fashion",
+        "name": "Archive fashion",
+        "description": "References historical fashion imagery and photographic archives. Emphasizes timeless composition, analog feeling, and cultural continuity.",
+        "visual_behavior": "classic, referential",
+        "use_case": "Heritage storytelling, re-editions, brand legacy projects",
+        "output_character": "timeless, cultured, intentional"
+      },
+      {
+        "id": "experimental_authorial",
+        "name": "Experimental authorial",
+        "description": "Strong directorial presence. Style is expressive and subjective, prioritizing visual language over conventional readability.",
+        "visual_behavior": "expressive, unconventional",
+        "use_case": "Art projects, limited editions, conceptual campaigns",
+        "output_character": "distinctive, bold, non-commercial"
+      }
+    ]
+  },
+  "default": "auto"
+}

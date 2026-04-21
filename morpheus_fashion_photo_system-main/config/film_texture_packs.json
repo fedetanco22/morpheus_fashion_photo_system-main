@@ -1,0 +1,89 @@
+{
+  "packs": {
+    "auto": {
+      "name": "Auto",
+      "prompt_fragment": "film texture automatically selected based on camera system, lens character, lighting conditions, and intent, preserving realistic photographic material response"
+    },
+    "digital_clean_no_emulation": {
+      "name": "Digital clean",
+      "prompt_fragment": "pure digital capture, no film emulation, no visible grain, smooth tonal gradients, maximum clarity, modern sensor response"
+    },
+    "kodak_vision3_50d": {
+      "name": "Kodak Vision3 50D",
+      "prompt_fragment": "very fine grain cinema negative texture, extremely clean shadows, smooth highlight rolloff, high color fidelity, minimal noise, daylight-balanced film feel"
+    },
+    "kodak_vision3_250d": {
+      "name": "Kodak Vision3 250D",
+      "prompt_fragment": "moderate fine grain cinema negative, organic texture presence, strong highlight latitude, rich midtones, balanced contrast, daylight film character"
+    },
+    "kodak_vision3_500t": {
+      "name": "Kodak Vision3 500T",
+      "prompt_fragment": "visible but refined grain structure, strong highlight retention, cinematic night-friendly texture, organic noise pattern, tungsten-balanced feel"
+    },
+    "kodak_portra_160": {
+      "name": "Kodak Portra 160",
+      "prompt_fragment": "very fine photographic grain, soft contrast, excellent skin tone neutrality, pastel highlight response, clean and elegant fashion texture"
+    },
+    "kodak_portra_400": {
+      "name": "Kodak Portra 400",
+      "prompt_fragment": "fine but noticeable grain, gentle contrast curve, natural skin rendering, slightly muted colors, classic editorial fashion look"
+    },
+    "kodak_portra_800": {
+      "name": "Kodak Portra 800",
+      "prompt_fragment": "visible grain with controlled structure, soft highlight rolloff, organic noise, low-light friendly editorial texture"
+    },
+    "kodak_gold_200": {
+      "name": "Kodak Gold 200",
+      "prompt_fragment": "pronounced grain, warm color bias, higher contrast, nostalgic consumer film texture, lively highlights"
+    },
+    "kodak_tri_x_400": {
+      "name": "Kodak Tri X 400",
+      "prompt_fragment": "strong monochrome grain, high contrast, deep blacks, gritty silver halide texture, classic reportage film character"
+    },
+    "ilford_hp5_400": {
+      "name": "Ilford HP5 400",
+      "prompt_fragment": "coarse but organic black and white grain, softer contrast than Tri X, rich midtones, documentary film texture"
+    },
+    "fujifilm_provia_100f": {
+      "name": "Fujifilm Provia 100F",
+      "prompt_fragment": "extremely fine grain slide film texture, crisp contrast, clean highlights, precise color separation, polished editorial feel"
+    },
+    "fujifilm_velvia_50": {
+      "name": "Fujifilm Velvia 50",
+      "prompt_fragment": "very fine grain with strong saturation, high contrast slide film look, deep colors, dramatic tonal separation"
+    },
+    "cinema_print_stock_2383": {
+      "name": "Cinema print stock",
+      "prompt_fragment": "print film texture, compressed highlights, deeper blacks, denser contrast, subtle grain added by print stage, cinematic finishing look"
+    },
+    "scanned_negative_film": {
+      "name": "Scanned negative film",
+      "prompt_fragment": "film negative scanned look, subtle scanner softness, organic grain structure, slight halation, non-digital surface feel"
+    },
+    "aged_film_stock": {
+      "name": "Aged film stock",
+      "prompt_fragment": "aged emulsion texture, lifted blacks, reduced contrast, uneven grain, subtle fading, archival photographic character"
+    },
+    "push_processed_film": {
+      "name": "Push processed film",
+      "prompt_fragment": "push-processed film texture, increased grain, elevated contrast, compressed highlights, aggressive photographic energy"
+    },
+    "soft_halation_emulsion": {
+      "name": "Soft halation emulsion",
+      "prompt_fragment": "gentle halation around highlights, organic glow, subtle light bloom without loss of structure"
+    },
+    "strong_halation_emulsion": {
+      "name": "Strong halation emulsion",
+      "prompt_fragment": "pronounced halation, glowing highlight edges, visible light spill, expressive analog bloom"
+    },
+    "scanned_magazine_print": {
+      "name": "Scanned magazine print",
+      "prompt_fragment": "editorial magazine scan texture, subtle halftone pattern, ink response simulation, tactile printed surface"
+    },
+    "fine_art_matte_print": {
+      "name": "Fine art matte print",
+      "prompt_fragment": "matte paper texture, reduced specular highlights, soft contrast, refined fine art photographic finish"
+    }
+  },
+  "default": "auto"
+}

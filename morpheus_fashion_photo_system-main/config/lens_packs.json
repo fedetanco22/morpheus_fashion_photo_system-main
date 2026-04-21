@@ -1,0 +1,137 @@
+{
+  "packs": {
+    "auto": {
+      "name": "Auto",
+      "prompt_fragment": "auto-select the most appropriate lens look and focal length for the intent, shot, and format; prioritize realistic proportions and garment fidelity"
+    },
+    "arri_signature_prime_25": {
+      "name": "Arri Signature Prime 25mm",
+      "prompt_fragment": "ARRI Signature Prime 25mm look: modern high-end cinema clarity, smooth highlight roll-off, clean micro-contrast, natural skin texture, minimal distortion, reliable color neutrality"
+    },
+    "arri_signature_prime_50": {
+      "name": "Arri Signature Prime 50mm",
+      "prompt_fragment": "ARRI Signature Prime 50mm look: refined cinematic rendering, flattering perspective, gentle separation, low aberrations, consistent color, premium realism"
+    },
+    "arri_zeiss_master_prime_25": {
+      "name": "Arri Zeiss Master Prime 25mm",
+      "prompt_fragment": "ARRI/ZEISS Master Prime 25mm look: ultra-sharp high-speed cinema prime, high contrast, minimal flare, minimal distortion, precise color and texture separation"
+    },
+    "arri_zeiss_master_prime_50": {
+      "name": "Arri Zeiss Master Prime 50mm",
+      "prompt_fragment": "ARRI/ZEISS Master Prime 50mm look: crisp cinematic precision, strong subject definition, controlled flare, clean blacks, faithful garment texture and seams"
+    },
+    "arri_zeiss_ultra_prime_14": {
+      "name": "Arri Zeiss Ultra Prime 14mm",
+      "prompt_fragment": "ARRI/ZEISS Ultra Prime 14mm look: wide but controlled, lightweight cinema prime rendering, clean lines, controlled distortion, natural perspective without warping"
+    },
+    "arri_zeiss_ultra_prime_25": {
+      "name": "Arri Zeiss Ultra Prime 25mm",
+      "prompt_fragment": "ARRI/ZEISS Ultra Prime 25mm look: neutral cinema standard, crisp but not harsh, controlled flare, reliable color, consistent geometry"
+    },
+    "arri_zeiss_ultra_prime_50": {
+      "name": "Arri Zeiss Ultra Prime 50mm",
+      "prompt_fragment": "ARRI/ZEISS Ultra Prime 50mm look: natural perspective, clean separation, dependable sharpness, restrained flare, accurate proportions"
+    },
+    "atlas_orion_50": {
+      "name": "Atlas Orion Anamorphic 50mm",
+      "prompt_fragment": "Atlas Orion anamorphic 50mm look: oval bokeh, horizontal flares, cinematic scope language, controlled distortion, modern anamorphic character with clean subject readability"
+    },
+    "canon_k35_24": {
+      "name": "Canon K35 24mm",
+      "prompt_fragment": "Canon K35 24mm look: vintage cinema character, softer contrast with pleasing roll-off, gentle halation on highlights, warm tones, organic texture"
+    },
+    "canon_k35_55": {
+      "name": "Canon K35 55mm",
+      "prompt_fragment": "Canon K35 55mm look: vintage warmth, gentle bloom, smooth skin rendering, classic 70s-80s cinema mood, still readable garment texture"
+    },
+    "cooke_anamorphic_i_50": {
+      "name": "Cooke Anamorphic i 50mm",
+      "prompt_fragment": "Cooke Anamorphic/i 50mm look: classic Cooke color with anamorphic oval bokeh and horizontal flares, cinematic softness, controlled artifacts, premium authorial tone"
+    },
+    "cooke_anamorphic_sf_50": {
+      "name": "Cooke Anamorphic SF 50mm",
+      "prompt_fragment": "Cooke Anamorphic SF 50mm look: special flare character, pronounced horizontal flares, oval bokeh, expressive cinematic language while preserving garment readability"
+    },
+    "cooke_panchro_classic_ff_50": {
+      "name": "Cooke Panchro Classic FF 50mm",
+      "prompt_fragment": "Cooke Panchro Classic FF 50mm look: modern mechanics with vintage Panchro character, gentle contrast, soft roll-off, subtle flare, organic filmic feel"
+    },
+    "cooke_s4_25": {
+      "name": "Cooke S4 25mm",
+      "prompt_fragment": "Cooke S4 25mm look: classic cinematic smoothness, gentle contrast, warm skin rendering, pleasing falloff, controlled flare, premium editorial softness without losing garment detail"
+    },
+    "cooke_s4_50": {
+      "name": "Cooke S4 50mm",
+      "prompt_fragment": "Cooke S4 50mm look: flattering perspective, subtle warmth, creamy roll-off, classic Cooke character, clean but organic texture"
+    },
+    "cooke_speed_panchro_25": {
+      "name": "Cooke Speed Panchro 25mm",
+      "prompt_fragment": "Cooke Speed Panchro 25mm look: classic vintage softness, lower contrast, pleasing flare, organic midtones, cinematic nostalgia"
+    },
+    "cooke_speed_panchro_50": {
+      "name": "Cooke Speed Panchro 50mm",
+      "prompt_fragment": "Cooke Speed Panchro 50mm look: flattering classic portrait rendering, soft highlights, gentle contrast, filmic imperfections, authentic vintage character"
+    },
+    "helios_44_2_58": {
+      "name": "Helios 44-2 58mm",
+      "prompt_fragment": "Helios 44-2 58mm look: strong vintage character, swirly bokeh in backgrounds, lower contrast, soft edges, poetic mood while keeping subject identity locked"
+    },
+    "jdc_xtal_xpres_50": {
+      "name": "JDC Xtal Xpres 50mm",
+      "prompt_fragment": "JDC Xtal Xpres 50mm look: bold vintage anamorphic character, strong flare personality, organic softness, distinctive bokeh, unmistakable authorial mood"
+    },
+    "leica_noctilux_50": {
+      "name": "Leica Noctilux 50mm",
+      "prompt_fragment": "Leica Noctilux 50mm look: iconic shallow depth separation, dreamy highlight bloom at edges, intimate fashion-editorial mood, still preserving facial identity and garment key lines"
+    },
+    "leitz_summicron_c_25": {
+      "name": "Leitz Summicron C 25mm",
+      "prompt_fragment": "Leitz Summicron-C 25mm look: clean cinematic realism, slightly softer contrast than ultra-modern primes, natural skin tones, controlled flare, reliable geometry"
+    },
+    "leitz_summicron_c_50": {
+      "name": "Leitz Summicron C 50mm",
+      "prompt_fragment": "Leitz Summicron-C 50mm look: balanced contrast, organic sharpness, gentle falloff, accurate colors, refined but not sterile"
+    },
+    "leitz_summilux_c_25": {
+      "name": "Leitz Summilux C 25mm",
+      "prompt_fragment": "Leitz Summilux-C 25mm look: high-end cinema neutrality with gentle polish, smooth bokeh, controlled highlights, precise color, refined micro-contrast"
+    },
+    "leitz_summilux_c_50": {
+      "name": "Leitz Summilux C 50mm",
+      "prompt_fragment": "Leitz Summilux-C 50mm look: premium cinematic realism, clean color, elegant roll-off, flattering compression, high fidelity garment textures"
+    },
+    "lomography_petzval_55": {
+      "name": "Lomography Petzval 55mm",
+      "prompt_fragment": "Petzval 55mm look: distinctive vintage rendering with strong character bokeh, dreamy falloff, romantic highlight behavior, artistic fashion mood"
+    },
+    "normal_perspective": {
+      "name": "Normal Perspective",
+      "prompt_fragment": "natural perspective, true-to-life proportions, minimal distortion, balanced depth separation"
+    },
+    "panavision_c_series_50": {
+      "name": "Panavision C Series 50mm",
+      "prompt_fragment": "Panavision C Series anamorphic 50mm look: classic anamorphic flare, organic graduated depth, compact vintage tone, cinematic bokeh and texture, film-era character"
+    },
+    "portrait_compression": {
+      "name": "Portrait Compression",
+      "prompt_fragment": "gentle portrait compression, flattering proportions, clean separation, minimal distortion"
+    },
+    "telephoto_flattening": {
+      "name": "Telephoto Flattening",
+      "prompt_fragment": "telephoto perspective flattening, compressed background, subject isolation, editorial distance"
+    },
+    "wide_distortion_controlled": {
+      "name": "Wide Distortion Controlled",
+      "prompt_fragment": "wide coverage with controlled distortion, natural perspective, minimal warping, realistic proportions"
+    },
+    "zeiss_otus_28": {
+      "name": "Zeiss Otus 28mm",
+      "prompt_fragment": "ZEISS Otus 28mm look: extremely high micro-contrast and resolution, clean neutrality, controlled distortion, premium fashion sharpness with natural texture"
+    },
+    "zeiss_otus_55": {
+      "name": "Zeiss Otus 55mm",
+      "prompt_fragment": "ZEISS Otus 55mm look: razor micro-contrast, true-to-life color, flattering perspective, crisp fabric texture and stitching, refined editorial clarity"
+    }
+  },
+  "default": "auto"
+}

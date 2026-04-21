@@ -1,0 +1,265 @@
+{
+  "packs": {
+    "auto": {
+      "name": "Auto",
+      "description": "Automatic pose discipline where the model selects the safest pose based on intent, shot, wardrobe, and fit priority, avoiding distortion and preserving garment readability.",
+      "prompt_fragment": "a natural fashion pose automatically chosen to match the intent while preserving fit and silhouette",
+      "fit_priority": "adaptive",
+      "risk_profile": "lowest",
+      "best_for": [
+        "all intents",
+        "unknown constraints",
+        "mixed wardrobes"
+      ]
+    },
+    "fit_preserving_neutral_stance": {
+      "name": "Fit preserving neutral stance",
+      "description": "Primary e-commerce and fit-validation baseline. Upright posture, weight evenly distributed, arms relaxed, no twist or bend. Maximizes clarity of silhouette, lengths, and construction lines.",
+      "prompt_fragment": "fit-preserving neutral standing pose, straight posture, weight evenly distributed, arms relaxed, no twist, full outfit clearly readable",
+      "fit_priority": "very high",
+      "risk_profile": "lowest",
+      "best_for": [
+        "fit proof",
+        "consideration",
+        "lookbook",
+        "e-commerce",
+        "tailoring",
+        "outerwear"
+      ]
+    },
+    "commercial_front_facing": {
+      "name": "Commercial front facing",
+      "description": "Commercial front-facing stance designed for catalog and marketplace clarity. Subtle contrapposto allowed but remains symmetrical enough to keep hem, collar, and waistband lines legible.",
+      "prompt_fragment": "front-facing commercial pose with clean symmetry, slight natural stance, outfit lines and proportions clearly readable",
+      "fit_priority": "very high",
+      "risk_profile": "low",
+      "best_for": [
+        "e-commerce",
+        "catalog",
+        "marketplace ads",
+        "swimwear",
+        "denim"
+      ]
+    },
+    "three_quarter_balanced_stance": {
+      "name": "Three quarter balanced stance",
+      "description": "Balanced three-quarter stance showing front and side simultaneously. Preserves garment geometry while adding depth and editorial sophistication without body distortion.",
+      "prompt_fragment": "balanced three-quarter standing pose showing front and side, minimal distortion, clear garment structure",
+      "fit_priority": "high",
+      "risk_profile": "low",
+      "best_for": [
+        "editorial",
+        "campaign",
+        "outerwear",
+        "accessories visibility"
+      ]
+    },
+    "static_editorial_stillness": {
+      "name": "Static editorial stillness",
+      "description": "Luxury editorial stillness. The body is composed and nearly motionless, with deliberate posture and controlled expression. Emphasizes presence, attitude, and premium restraint while keeping fit readable.",
+      "prompt_fragment": "still editorial pose with composed posture and minimal movement, strong presence, outfit remains clean and readable",
+      "fit_priority": "high",
+      "risk_profile": "low",
+      "best_for": [
+        "luxury editorial",
+        "Prada-style restraint",
+        "beauty-forward fashion"
+      ]
+    },
+    "editorial_weight_shift": {
+      "name": "Editorial weight shift",
+      "description": "Classic high-fashion weight shift (contrapposto) with controlled hip and shoulder offset. Creates sculptural silhouette while keeping key seams, closures, and hem alignment legible.",
+      "prompt_fragment": "editorial weight-shift stance with controlled contrapposto, sculptural silhouette, garment lines still readable",
+      "fit_priority": "medium-high",
+      "risk_profile": "medium",
+      "best_for": [
+        "campaign fashion",
+        "runway-inspired editorials",
+        "tailoring with attitude"
+      ]
+    },
+    "walking_proof_step": {
+      "name": "Walking proof step",
+      "description": "Single controlled walking step used to demonstrate drape, swing, and real fabric behavior. Movement is restrained to avoid motion blur and preserve garment shape cues.",
+      "prompt_fragment": "controlled walking step mid-stride to show natural drape and hem movement, minimal blur, outfit remains readable",
+      "fit_priority": "high",
+      "risk_profile": "medium",
+      "best_for": [
+        "movement proof",
+        "outerwear",
+        "skirts and dresses",
+        "denim"
+      ]
+    },
+    "motion_continuation": {
+      "name": "Motion continuation",
+      "description": "Continuous motion moment (walk-through or gentle turn) that feels candid and cinematic. Keeps movement smooth and physically plausible while maintaining silhouette readability.",
+      "prompt_fragment": "smooth motion continuation moment, candid but controlled, garments move naturally while staying readable",
+      "fit_priority": "medium-high",
+      "risk_profile": "medium",
+      "best_for": [
+        "campaign motion",
+        "street style sequences",
+        "contact-sheet motion proofs"
+      ]
+    },
+    "seated_fit_readable": {
+      "name": "Seated fit readable",
+      "description": "Controlled seated posture designed to reveal waist, hip, and thigh behavior without excessive wrinkling or distortion. Useful for comfort proof and fit validation in seated scenarios.",
+      "prompt_fragment": "clean seated posture with aligned spine, garments drape naturally at waist and hips, fit remains readable",
+      "fit_priority": "high",
+      "risk_profile": "medium",
+      "best_for": [
+        "comfort proof",
+        "denim fit",
+        "tailoring seated",
+        "bag interaction"
+      ]
+    },
+    "relaxed_seated_lifestyle": {
+      "name": "Relaxed seated lifestyle",
+      "description": "Lifestyle seated pose with relaxed shoulders and natural slouch kept within safe limits. Communicates comfort and authenticity while protecting garment readability.",
+      "prompt_fragment": "relaxed lifestyle seated pose with gentle natural slouch, comfort-forward, outfit remains readable and not distorted",
+      "fit_priority": "medium",
+      "risk_profile": "medium",
+      "best_for": [
+        "lifestyle fashion",
+        "athleisure",
+        "knitwear",
+        "casual luxury"
+      ]
+    },
+    "leaning_casual_editorial": {
+      "name": "Leaning casual editorial",
+      "description": "Light lean against a wall or rail for casual editorial energy. The lean is minimal to avoid shoulder collapse and preserve jacket drape and line integrity.",
+      "prompt_fragment": "casual leaning pose with minimal body collapse, relaxed attitude, garment drape and lines preserved",
+      "fit_priority": "medium-high",
+      "risk_profile": "medium",
+      "best_for": [
+        "street editorial",
+        "outerwear",
+        "urban campaign",
+        "accessories"
+      ]
+    },
+    "street_style_candid_stand": {
+      "name": "Street style candid stand",
+      "description": "Candid street-style standing pose. Reads like a real off-duty fashion moment, with subtle asymmetry and natural gesture while preserving silhouette and avoiding extreme bends.",
+      "prompt_fragment": "candid street style standing pose, relaxed natural gesture, subtle asymmetry, outfit remains readable",
+      "fit_priority": "medium",
+      "risk_profile": "medium",
+      "best_for": [
+        "street style",
+        "youth fashion",
+        "TikTok and Instagram fashion",
+        "day-to-night looks"
+      ]
+    },
+    "street_style_candid_walk": {
+      "name": "Street style candid walk",
+      "description": "Candid urban walk with authentic rhythm. Arms and shoulders move naturally but remain restrained enough to keep the outfit legible at mobile scale.",
+      "prompt_fragment": "candid street style walk with natural rhythm, controlled movement, outfit remains readable at mobile scale",
+      "fit_priority": "medium",
+      "risk_profile": "medium-high",
+      "best_for": [
+        "street campaign",
+        "city looks",
+        "outerwear in motion",
+        "shoe-forward looks"
+      ]
+    },
+    "confidence_stance": {
+      "name": "Confidence stance",
+      "description": "Confidence-first posture used in tailoring and power dressing. Includes hands in pockets or relaxed arms that open the chest and communicate authority without aggressive posing.",
+      "prompt_fragment": "confident stance with open posture, relaxed shoulders, hands in pockets or relaxed arms, authoritative but not performative",
+      "fit_priority": "medium-high",
+      "risk_profile": "medium",
+      "best_for": [
+        "tailoring",
+        "formalwear",
+        "menswear-inspired styling",
+        "luxury campaign"
+      ]
+    },
+    "back_view_construction": {
+      "name": "Back view construction",
+      "description": "Back-facing pose for construction proof: shoulder fit, back seams, length, vent behavior, and overall garment engineering from the rear view.",
+      "prompt_fragment": "back view fashion pose with straight posture, garment back construction clearly visible, no twist",
+      "fit_priority": "high",
+      "risk_profile": "low",
+      "best_for": [
+        "outerwear",
+        "tailoring",
+        "dress construction",
+        "fit proof sets"
+      ]
+    },
+    "profile_clarity_stance": {
+      "name": "Profile clarity stance",
+      "description": "Clean side profile designed to show silhouette thickness, layering volume, and proportion accuracy. Avoids forward hunching to keep neckline and shoulder line correct.",
+      "prompt_fragment": "clean side-profile pose with aligned posture, silhouette and layering volume clearly visible, minimal distortion",
+      "fit_priority": "high",
+      "risk_profile": "low",
+      "best_for": [
+        "outerwear",
+        "layering",
+        "technical garments",
+        "silhouette proof"
+      ]
+    },
+    "sport_active_ready": {
+      "name": "Sport active ready",
+      "description": "Athletic readiness stance for activewear: grounded feet, engaged core, neutral spine. Communicates performance without extreme stretch that would misrepresent fit.",
+      "prompt_fragment": "athletic ready stance with grounded feet and engaged posture, performance energy without extreme stretch, garments remain readable",
+      "fit_priority": "medium-high",
+      "risk_profile": "medium",
+      "best_for": [
+        "activewear",
+        "sport fashion",
+        "performance apparel",
+        "sneaker looks"
+      ]
+    },
+    "sport_in_motion": {
+      "name": "Sport in motion",
+      "description": "Controlled athletic motion (jog step, lateral step, warm-up move) to show technical fabric behavior and dynamic comfort. Movement remains crisp to avoid blur and shape loss.",
+      "prompt_fragment": "controlled athletic motion moment, crisp movement with minimal blur, technical garments moving naturally while staying readable",
+      "fit_priority": "medium",
+      "risk_profile": "high",
+      "best_for": [
+        "activewear campaigns",
+        "training apparel",
+        "movement proof",
+        "outdoor sport fashion"
+      ]
+    },
+    "yoga_wellness_grounded": {
+      "name": "Yoga wellness grounded",
+      "description": "Wellness-focused grounded poses (mountain pose, gentle stretch, seated cross-leg) that communicate calm, breath, and alignment. Avoids extreme contortions that break garment fidelity.",
+      "prompt_fragment": "grounded wellness pose with calm alignment, gentle stretch or steady stance, no extreme contortion, garments remain accurate",
+      "fit_priority": "medium",
+      "risk_profile": "medium-high",
+      "best_for": [
+        "yoga and wellness",
+        "athleisure",
+        "slow fashion lifestyle",
+        "mindful campaign"
+      ]
+    },
+    "creative_composed_fashion": {
+      "name": "Creative composed fashion",
+      "description": "Art-fashion and campaign creative pose that is expressive but engineered. Uses sculptural lines, negative space, and intentional asymmetry while maintaining garment readability and proportion sanity.",
+      "prompt_fragment": "composed creative fashion pose, sculptural lines and controlled asymmetry, expressive but readable, proportions remain realistic",
+      "fit_priority": "low-medium",
+      "risk_profile": "highest",
+      "best_for": [
+        "art-fashion",
+        "concept campaigns",
+        "avant-garde styling",
+        "editorial experiments"
+      ]
+    }
+  },
+  "default": "auto",
+  "usage_note": "Applied only when use_pose_ref is false. When use_pose_ref is true, the reference pose must be copied exactly."
+}

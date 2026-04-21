@@ -1,0 +1,46 @@
+{
+  "models": {
+    "gemini-2.5-flash": {
+      "id": "gemini-2.5-flash",
+      "name": "Gemini 2.5 Flash",
+      "description": "Most capable Gemini 2.x model with balanced performance",
+      "recommended_temperature": 0.3,
+      "recommended_max_tokens": 4096,
+      "timeout_seconds": 120,
+      "retry_count": 3
+    },
+    "gemini-2.5-flash-preview-05-20": {
+      "id": "gemini-2.5-flash-preview-05-20",
+      "name": "Gemini 2.5 Flash Preview",
+      "description": "Preview version of 2.5 Flash with latest improvements",
+      "recommended_temperature": 0.3,
+      "recommended_max_tokens": 4096,
+      "timeout_seconds": 120,
+      "retry_count": 3
+    },
+    "gemini-2.0-flash": {
+      "id": "gemini-2.0-flash",
+      "name": "Gemini 2.0 Flash",
+      "description": "GA model for high-volume tasks with 1M token context window",
+      "recommended_temperature": 0.3,
+      "recommended_max_tokens": 2048,
+      "timeout_seconds": 90,
+      "retry_count": 3
+    },
+    "gemini-2.0-flash-lite": {
+      "id": "gemini-2.0-flash-lite",
+      "name": "Gemini 2.0 Flash Lite",
+      "description": "Most cost-effective option for large-scale text tasks",
+      "recommended_temperature": 0.3,
+      "recommended_max_tokens": 2048,
+      "timeout_seconds": 60,
+      "retry_count": 3
+    }
+  },
+  "default_model": "gemini-2.0-flash",
+  "fallback_model": "gemini-2.0-flash",
+  "api_base_url": "https://generativelanguage.googleapis.com/v1beta/models",
+  "max_image_size": 1024,
+  "jpeg_quality": 85,
+  "studio_keywords": ["studio", "cyclorama", "backdrop", "white seamless", "in studio", "studio setting", "studio shot"]
+}

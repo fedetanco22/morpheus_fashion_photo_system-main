@@ -1,0 +1,27 @@
+{
+  "template_version": "1.0",
+  "description": "Template for compiling RESOLVED_JSON into Nano Banana prompt",
+  "base_structure": "Make {subject_description} wearing {wardrobe_description}, {pose_description}, {shot_description}, {lighting_description}, {environment_description}, {style_description}{branding_suffix}.",
+  "subject_template": "a {gender} model with {identity_traits}",
+  "wardrobe_template": "{garment_list}",
+  "pose_template": "{pose_type} {pose_details}",
+  "shot_template": "{camera_fragment} {shot_fragment}",
+  "lighting_template": "{lighting_fragment}",
+  "environment_template": "{environment_fragment}",
+  "style_template": "{style_fragment}",
+  "branding_suffix_template": ", {branding_fragment}",
+  "rules": {
+    "max_length": 500,
+    "single_sentence": true,
+    "start_with": "Make",
+    "no_lists": true,
+    "no_labels": true,
+    "no_negative_prompts": true,
+    "language": "english"
+  },
+  "fallback_values": {
+    "pose": "in a natural confident stance",
+    "style": "in premium editorial realism",
+    "environment": "in a clean neutral setting"
+  }
+}

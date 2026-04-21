@@ -1,0 +1,155 @@
+{
+  "packs": {
+    "auto": {
+      "id": "auto",
+      "name": "Auto",
+      "description": "Balanced professional camera rendering chosen automatically for the scene and intent, prioritizing natural skin tones, clean textures, realistic contrast, and trustworthy photographic values",
+      "behavior": "neutral professional capture, balanced tonality, natural contrast",
+      "stability": "high",
+      "focus_mode": "reliable continuous",
+      "depth_of_field": "natural controlled",
+      "prompt_fragment": "captured with a balanced professional camera rendering, natural skin tones, clean textures, realistic contrast, and trustworthy photographic clarity"
+    },
+    "arri_alexa35": {
+      "id": "arri_alexa35",
+      "name": "Arri Alexa 35",
+      "description": "Soft cinematic rendering with smooth highlight roll off, gentle contrast, organic texture, and very natural skin reproduction",
+      "behavior": "cinematic capture, soft contrast, organic tonal transitions",
+      "stability": "high",
+      "focus_mode": "operator controlled",
+      "depth_of_field": "cinematic shallow",
+      "prompt_fragment": "captured with a soft cinematic rendering, smooth highlight roll off, organic texture, gentle contrast, and very natural skin tones"
+    },
+    "canon_r5": {
+      "id": "canon_r5",
+      "name": "Canon R5",
+      "description": "Clean modern hybrid rendering with accurate color, soft skin handling, and dependable photographic clarity",
+      "behavior": "hybrid capture, clean rendering, accurate color fidelity",
+      "stability": "high",
+      "focus_mode": "continuous tracking",
+      "depth_of_field": "controlled",
+      "prompt_fragment": "captured with a clean modern hybrid rendering, accurate garment colors, soft skin handling, and dependable photographic clarity"
+    },
+    "contax_645": {
+      "id": "contax_645",
+      "name": "Contax 645",
+      "description": "Legendary medium format film rendering with smooth tonal rolloff, subtle grain, and a timeless fashion editorial depth",
+      "behavior": "medium format film capture, smooth tonality, elegant grain",
+      "stability": "medium",
+      "focus_mode": "manual",
+      "depth_of_field": "medium format shallow",
+      "prompt_fragment": "photographed with a classic medium format film rendering, smooth tonal rolloff, subtle grain, and timeless editorial depth"
+    },
+    "fuji_pro_400h": {
+      "id": "fuji_pro_400h",
+      "name": "Fujifilm Pro 400h",
+      "description": "Soft pastel film rendering with gentle contrast, muted saturation, and exceptionally pleasing skin tones",
+      "behavior": "color negative film look, pastel tones, low contrast",
+      "stability": "medium",
+      "focus_mode": "manual",
+      "depth_of_field": "natural",
+      "prompt_fragment": "rendered with a soft pastel film aesthetic, gentle contrast, muted saturation, and exceptionally pleasing skin tones"
+    },
+    "fujifilm_gfx100": {
+      "id": "fujifilm_gfx100",
+      "name": "Fujifilm Gfx 100",
+      "description": "High resolution medium format look with rich yet natural texture detail, balanced contrast, and faithful color response",
+      "behavior": "medium format stills, rich detail, balanced contrast",
+      "stability": "high",
+      "focus_mode": "fixed precise",
+      "depth_of_field": "medium format shallow",
+      "prompt_fragment": "photographed with a high resolution medium format rendering, rich yet natural texture detail, balanced contrast, and faithful color response"
+    },
+    "hasselblad_500cm": {
+      "id": "hasselblad_500cm",
+      "name": "Hasselblad 500cm",
+      "description": "Iconic square medium format film rendering with sculpted contrast, pronounced texture, and strong photographic presence",
+      "behavior": "medium format film capture, sculpted contrast, tactile texture",
+      "stability": "medium",
+      "focus_mode": "manual",
+      "depth_of_field": "medium format shallow",
+      "prompt_fragment": "photographed with an iconic medium format film rendering, sculpted contrast, tactile texture, and strong photographic presence"
+    },
+    "hasselblad_x2d": {
+      "id": "hasselblad_x2d",
+      "name": "Hasselblad X2d",
+      "description": "Luxury medium format digital rendering with very smooth tonal transitions, refined grain structure, and elegant depth separation",
+      "behavior": "medium format stills, refined tonality, smooth transitions",
+      "stability": "high",
+      "focus_mode": "fixed precise",
+      "depth_of_field": "medium format shallow",
+      "prompt_fragment": "photographed with a luxury medium format rendering, very smooth tonal transitions, refined grain structure, and elegant depth separation"
+    },
+    "leica_m6": {
+      "id": "leica_m6",
+      "name": "Leica M6",
+      "description": "Classic 35mm film rendering with natural contrast, visible grain, and an intimate documentary feel",
+      "behavior": "35mm film capture, natural contrast, visible grain",
+      "stability": "medium",
+      "focus_mode": "manual",
+      "depth_of_field": "natural",
+      "prompt_fragment": "rendered with a classic 35mm film aesthetic, natural contrast, visible grain, and an intimate documentary feel"
+    },
+    "leica_sl2": {
+      "id": "leica_sl2",
+      "name": "Leica Sl2",
+      "description": "High fidelity digital rendering with restrained contrast, dense color depth, and refined surface detail",
+      "behavior": "premium digital stills, restrained contrast, dense color",
+      "stability": "high",
+      "focus_mode": "precise continuous",
+      "depth_of_field": "controlled",
+      "prompt_fragment": "captured with a high fidelity digital rendering, restrained contrast, dense color depth, and refined surface detail"
+    },
+    "nikon_z9": {
+      "id": "nikon_z9",
+      "name": "Nikon Z9",
+      "description": "Robust professional stills rendering with stable tones, natural contrast, and a trustworthy non processed photographic feel",
+      "behavior": "pro stills capture, stable tones, natural contrast",
+      "stability": "high",
+      "focus_mode": "continuous tracking",
+      "depth_of_field": "controlled",
+      "prompt_fragment": "captured with a robust professional stills rendering, stable tones, natural contrast, and a trustworthy non processed photographic feel"
+    },
+    "panavision_panaflex": {
+      "id": "panavision_panaflex",
+      "name": "Panavision Panaflex",
+      "description": "Classic 35mm cinema film rendering with rich contrast, organic grain, and cinematic motion texture",
+      "behavior": "35mm cinema film capture, organic grain, rich contrast",
+      "stability": "high",
+      "focus_mode": "operator controlled",
+      "depth_of_field": "cinematic shallow",
+      "prompt_fragment": "rendered with a classic 35mm cinema film aesthetic, organic grain, rich contrast, and cinematic motion texture"
+    },
+    "red_vraptor": {
+      "id": "red_vraptor",
+      "name": "Red V-Raptor",
+      "description": "High precision digital rendering with crisp micro contrast, sharp edge definition, and a modern detailed photographic feel",
+      "behavior": "high precision capture, crisp micro contrast, modern digital clarity",
+      "stability": "high",
+      "focus_mode": "operator controlled",
+      "depth_of_field": "cinematic shallow",
+      "prompt_fragment": "captured with a high precision digital rendering, crisp micro contrast, sharp edge definition, and a modern detailed photographic feel"
+    },
+    "sony_a1": {
+      "id": "sony_a1",
+      "name": "Sony A1",
+      "description": "Ultra clean high clarity rendering with precise detail, minimal grain, and a sharp advertising oriented finish",
+      "behavior": "high clarity capture, minimal grain, sharp detail",
+      "stability": "high",
+      "focus_mode": "continuous tracking",
+      "depth_of_field": "controlled",
+      "prompt_fragment": "captured with an ultra clean high clarity rendering, precise detail, minimal grain, and a sharp advertising oriented finish"
+    },
+    "sony_venice2": {
+      "id": "sony_venice2",
+      "name": "Sony Venice 2",
+      "description": "Clean cinematic look with controlled sharpness, stable exposure, wide dynamic range feel, and neutral skin tone response",
+      "behavior": "clean cinema capture, controlled sharpness, stable tonal range",
+      "stability": "high",
+      "focus_mode": "operator controlled",
+      "depth_of_field": "cinematic shallow",
+      "prompt_fragment": "captured with a clean cinematic rendering, controlled sharpness, stable exposure, wide dynamic range feel, and neutral skin tones"
+    }
+  },
+  "default": "auto"
+}

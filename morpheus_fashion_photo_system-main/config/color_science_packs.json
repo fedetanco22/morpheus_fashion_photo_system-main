@@ -1,0 +1,61 @@
+{
+  "packs": {
+    "auto": {
+      "name": "Auto",
+      "prompt_fragment": "automatic color science selection based on intent, lighting, environment, and garment priority, balanced professional grading"
+    },
+    "neutral_premium_clean": {
+      "name": "Neutral premium clean",
+      "prompt_fragment": "neutral high-end color science, accurate garment colors, natural skin tones, balanced white point, clean highlight roll-off, no stylization"
+    },
+    "fashion_editorial_film": {
+      "name": "Fashion editorial film",
+      "prompt_fragment": "editorial film-inspired color science, gentle contrast curve, soft highlights, slightly lifted shadows, elegant skin tones, refined saturation"
+    },
+    "cold_exterior_warm_interior": {
+      "name": "Cold exterior warm interior",
+      "prompt_fragment": "cool blue-grey exterior tones contrasted with warm amber interior highlights, cinematic separation, preserved skin neutrality"
+    },
+    "muted_blues_and_amber": {
+      "name": "Muted blues and amber",
+      "prompt_fragment": "muted blue-grey palette with restrained amber accents, controlled saturation, cinematic balance, fashion-oriented restraint"
+    },
+    "warm_golden_editorial": {
+      "name": "Warm golden editorial",
+      "prompt_fragment": "warm golden color response, honey-toned highlights, soft shadow density, flattering skin tones, luxury editorial mood"
+    },
+    "cool_nordic_minimal": {
+      "name": "Cool nordic minimal",
+      "prompt_fragment": "cool nordic color science, icy blues and neutral greys, minimal saturation, clean whites, subtle warmth limited to skin tones"
+    },
+    "heritage_film_balance": {
+      "name": "Heritage film balance",
+      "prompt_fragment": "heritage film-inspired tonal response, gentle color separation, organic contrast, restrained saturation, timeless photographic feel"
+    },
+    "modern_digital_cinematic": {
+      "name": "Modern digital cinematic",
+      "prompt_fragment": "modern digital cinema color science, clean contrast, precise color separation, controlled highlights, contemporary fashion clarity"
+    },
+    "soft_pastel_editorial": {
+      "name": "Soft pastel editorial",
+      "prompt_fragment": "soft pastel color palette, low contrast, airy highlights, gentle skin rendering, refined fashion editorial softness"
+    },
+    "rich_saturated_editorial": {
+      "name": "Rich saturated editorial",
+      "prompt_fragment": "rich but controlled saturation, strong garment color presence, stable skin tones, punchy yet refined fashion grading"
+    },
+    "monochrome_with_accent": {
+      "name": "Monochrome with accent",
+      "prompt_fragment": "near-monochromatic palette with a single controlled accent color, graphic elegance, high fashion visual discipline"
+    },
+    "cinematic_low_contrast": {
+      "name": "Cinematic low contrast",
+      "prompt_fragment": "low contrast cinematic grading, smooth tonal transitions, preserved midtones, subtle highlights, filmic softness"
+    },
+    "high_contrast_graphic": {
+      "name": "High contrast graphic",
+      "prompt_fragment": "high contrast graphic color science, deep blacks, crisp highlights, strong visual structure, fashion-forward impact"
+    }
+  },
+  "default": "auto"
+}

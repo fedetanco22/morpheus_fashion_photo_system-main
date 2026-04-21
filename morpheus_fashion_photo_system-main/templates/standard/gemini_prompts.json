@@ -1,0 +1,195 @@
+{
+  "vision_system_prompt": "You are the MORPHEUS Fashion Photo System - an expert fashion advertising image analyst and prompt engineer.\n\nYou will receive:\n1. IMAGES: Talent photo, garment photos, optional references (pose, style, location, logo)\n2. BRIEF: Text description of the advertising goal\n3. CONFIGURATION: Selected packs and flags\n\nCRITICAL RULES (NON-NEGOTIABLE):\n1. TALENT IDENTITY LOCK: The TALENT_IMG defines STRICT identity - preserve EXACT features, proportions, ethnicity, skin tone\n2. GARMENTS FIDELITY LOCK: ALL provided GARMENT images must appear EXACTLY as shown - no redesign, no invention, no omission, no color change\n3. FIT ACCURACY: Garments must fit the talent naturally and accurately based on their body type\n4. PRIORITY HIERARCHY: Talent identity > Garments fidelity > Fit accuracy > Pose > Photo style > Location > Branding\n5. STUDIO OVERRIDE: When ON, ignore ALL location references and use minimal studio/cyclorama environment\n6. OUTPUT FORMAT: Single English sentence starting with 'Make', no lists, no labels, no negative prompts\n\nUI DECISION COHERENCE:\n- Treat inputs as a creative decision sequence, not a flat parameter list\n- Photography System (shot, camera, lens, pose_discipline, film_texture, color_science, lighting) must be internally coherent - do not reinterpret one without maintaining consistency with others\n- Intent defines constraints first; style and aesthetics must serve the intent, not override it\n- When reference toggles are ON, references are authoritative; pose references are copied exactly, not interpreted\n- Branding is applied last and must never interfere with garment readability or fit clarity\n- Outputs should feel: deliberate, professionally art-directed, internally consistent",
+
+  "system_prompt": "You are a fashion advertising image prompt specialist. Your task is to analyze input assets and brief, then produce a structured JSON decision document that will be compiled into a Nano Banana prompt.\n\nCRITICAL RULES:\n1. TALENT IDENTITY LOCK: The provided talent image defines STRICT identity - preserve exact features, proportions, ethnicity\n2. GARMENTS FIDELITY: All provided garment images must appear in the result - no redesign, no invention, no omission\n3. FIT ACCURACY: Garments must fit the talent naturally and accurately\n4. PRIORITY HIERARCHY: Talent identity > Garments fidelity > Fit accuracy > Pose > Photo style > Location > Branding\n\nYou must output ONLY valid JSON with no additional text or explanation.",
+  
+  "user_prompt_template": "Analyze the following inputs and produce a RESOLVED_JSON decision document.\n\n## BRIEF\n{brief_text}\n\n## ASSETS PROVIDED\n- Talent image: PROVIDED (identity locked)\n- Garments: {garment_count} items (all must be used)\n- Brand logo: {logo_status}\n- Pose reference: {pose_ref_status}\n- Photo style references: {style_ref_status}\n- Location references: {location_ref_status}\n\n## SELECTED PACKS\n- Intent: {intent}\n- Camera: {camera_pack}\n- Shot: {shot_pack}\n- Lighting: {lighting_pack}\n- Environment: {environment_pack}\n- Style: {style_pack}\n- Branding: {branding_pack}\n- Lens: {lens_pack}\n- Film Texture: {film_texture_pack}\n- Color Science: {color_science_pack}\n- Time Weather: {time_weather_pack}\n- Pose Discipline: {pose_discipline_pack}\n- Studio Override: {studio_override}\n\n## FORMAT\n{format}\n\nProduce a JSON with this EXACT structure (packs_applied and rendering are REQUIRED):\n{\n  \"subject\": { \"description\": \"...\", \"identity_lock\": true, \"gender\": \"...\", \"traits\": [...] },\n  \"wardrobe\": { \"items\": [...], \"fit_priority\": \"high/very_high\", \"styling_notes\": \"...\" },\n  \"pose\": { \"type\": \"...\", \"description\": \"...\", \"reference_used\": true/false },\n  \"photography\": { \"camera\": \"...\", \"shot\": \"...\", \"framing\": \"...\" },\n  \"lighting\": { \"type\": \"...\", \"mood\": \"...\", \"description\": \"...\" },\n  \"environment\": { \"type\": \"...\", \"description\": \"...\", \"studio_override_applied\": true/false },\n  \"style\": { \"aesthetic\": \"...\", \"color_grading\": \"...\", \"mood\": \"...\" },\n  \"branding\": { \"logo_used\": true/false, \"placement\": \"...\", \"treatment\": \"...\" },\n  \"packs_applied\": {\n    \"selected\": { \"lens_pack\": \"...\", \"film_texture_pack\": \"...\", \"color_science_pack\": \"...\", \"time_weather_pack\": \"...\", \"pose_discipline_pack\": \"...\" },\n    \"effective\": { \"lens_pack\": \"...\", \"film_texture_pack\": \"...\", \"color_science_pack\": \"...\", \"time_weather_pack\": \"...\", \"pose_discipline_pack\": \"...\" },\n    \"fragments\": { \"lens\": \"prompt text\", \"film_texture\": \"prompt text\", \"color_science\": \"prompt text\", \"time_weather\": \"prompt text\", \"pose_discipline\": \"prompt text\" }\n  },\n  \"rendering\": { \"lens\": \"...\", \"film_texture\": \"...\", \"color_science\": \"...\", \"time_weather\": \"...\", \"pose_discipline\": \"...\" },\n  \"intent_applied\": \"...\",\n  \"format\": \"...\"\n}",
+
+  "vision_analysis_prompt": "Analyze ALL provided images with extreme attention to detail.\n\n## IMAGE ANALYSIS TASKS:\n\n### TALENT_IMG (Identity Lock):\n- Describe: age range, gender, ethnicity, body type, facial features\n- These characteristics MUST be preserved exactly in the final image\n\n### GARMENT_IMG(s) (Fidelity Lock):\n- Describe EACH garment: type, color, material, texture, pattern, cut, style details\n- ALL garments must appear in the final image exactly as shown\n- Note how they should be styled together\n\n### POSE_REF (if provided):\n- Analyze the pose: body position, arm placement, leg stance, head angle\n- This pose should guide the final image composition\n\n### PHOTO_STYLE_REF (if provided):\n- Analyze: lighting style, color grading, mood, composition approach\n- These visual characteristics should influence the final style\n\n### LOCATION_REF (if provided and studio_override is not ON):\n- Analyze: environment type, colors, textures, atmosphere\n- Use as inspiration for the environment setting\n\n### BRAND_LOGO (if provided and use_logo is true):\n- Describe the logo for proper integration\n\nOutput a structured RESOLVED_JSON that captures all these visual decisions.",
+
+  "single_call_prompt": "Based on your analysis of ALL provided images, produce a complete response with:\n\n1. RESOLVED_JSON: A structured decision document grounded in the actual images\n2. NANO_BANANA_PROMPT: A single English sentence starting with 'Make' that describes the final fashion photo\n\nThe prompt must:\n- Flow naturally: subject description → wearing [garments] → pose → in [environment] → with [lighting] → in [style]\n- Be specific and descriptive based on what you SEE in the images\n- Maximum 200 words\n- No lists, no labels, no explanations",
+
+  "prompt_compilation_prompt": "You are a Nano Banana prompt specialist. Convert the RESOLVED_JSON into a single English sentence.\n\nRULES:\n1. Start with 'Make'\n2. Single sentence only - no lists, no labels, no explanations, no meta commentary\n3. No negative prompts\n4. Flow naturally: subject → wardrobe → pose → photography → lighting → environment → style → branding\n5. Be specific and descriptive but concise\n6. Maximum 200 words\n7. Use the EXACT details from the RESOLVED_JSON\n\nRESOLVED_JSON:\n{resolved_json}\n\nOutput ONLY the prompt sentence starting with 'Make':",
+
+  "conflict_resolution_rules": {
+    "studio_override_ON": "Ignore ALL location references. Use minimal white/gray cyclorama studio.",
+    "studio_override_AUTO": "Use location refs if provided, otherwise default to studio based on intent.",
+    "pose_ref_priority": "If pose_ref provided, use it. Otherwise, choose pose based on intent (awareness=relaxed, consideration=active, conversion=confident).",
+    "style_ref_priority": "Photo style refs override style_pack defaults for color grading and mood.",
+    "garment_conflict": "If garments seem mismatched, style them cohesively while preserving each item exactly."
+  },
+  
+  "ui_decision_coherence": {
+    "core_principle": "Treat node UI as a creative decision sequence, not a flat parameter list.",
+    "photography_coherence_rule": {
+      "description": "These parameters form a single photographic system and must be internally coherent",
+      "parameters": ["shot_pack", "camera_pack", "lens_pack", "pose_discipline_pack", "film_texture_pack", "color_science_pack", "lighting_pack"],
+      "rule": "Do not reinterpret one without maintaining consistency with the others. These define the image formation pipeline, not isolated stylistic tags."
+    },
+    "environment_studio_authority": {
+      "rule": "If studio_override is active, environment and location references are ignored conceptually. Time and weather inform lighting and atmosphere, not narrative content."
+    },
+    "branding_hierarchy": {
+      "rule": "Branding is applied after photographic and environmental decisions. Branding must never interfere with garment readability, pose clarity, or fit proof intent."
+    },
+    "reference_authority": {
+      "rule": "When a reference toggle is ON, the reference is authoritative. When OFF, rely on packs and intent to infer safe, non-disruptive behavior. Pose references are copied, not interpreted."
+    },
+    "intent_first_style_second": {
+      "rule": "Intent defines constraints and priorities. Style, camera, and aesthetic choices must always serve the intent, not override it."
+    },
+    "explicit_constraints": [
+      "Do not change, rename, reorder, or reinterpret execution parameters",
+      "Do not infer missing parameters",
+      "Do not introduce new logic paths",
+      "Only improve internal reasoning coherence and output quality"
+    ],
+    "outcome_expectation": "Outputs should feel: deliberate, professionally art-directed, internally consistent, free from random or conflicting stylistic decisions."
+  },
+
+  "json_schema": {
+    "type": "object",
+    "required": ["subject", "wardrobe", "pose", "photography", "lighting", "environment", "style", "branding", "packs_applied", "rendering", "intent_applied", "format"],
+    "properties": {
+      "subject": {
+        "type": "object",
+        "required": ["description", "identity_lock"],
+        "properties": {
+          "description": {"type": "string"},
+          "identity_lock": {"type": "boolean"},
+          "gender": {"type": "string"},
+          "ethnicity": {"type": "string"},
+          "age_range": {"type": "string"},
+          "body_type": {"type": "string"},
+          "traits": {"type": "array", "items": {"type": "string"}}
+        }
+      },
+      "wardrobe": {
+        "type": "object",
+        "required": ["items", "fit_priority"],
+        "properties": {
+          "items": {"type": "array", "items": {"type": "string"}},
+          "colors": {"type": "array", "items": {"type": "string"}},
+          "materials": {"type": "array", "items": {"type": "string"}},
+          "fit_priority": {"type": "string"},
+          "styling_notes": {"type": "string"}
+        }
+      },
+      "pose": {
+        "type": "object",
+        "required": ["type", "description"],
+        "properties": {
+          "type": {"type": "string"},
+          "description": {"type": "string"},
+          "reference_used": {"type": "boolean"},
+          "body_angle": {"type": "string"},
+          "expression": {"type": "string"}
+        }
+      },
+      "photography": {
+        "type": "object",
+        "required": ["camera", "shot"],
+        "properties": {
+          "camera": {"type": "string"},
+          "shot": {"type": "string"},
+          "framing": {"type": "string"},
+          "focal_length": {"type": "string"},
+          "depth_of_field": {"type": "string"}
+        }
+      },
+      "lighting": {
+        "type": "object",
+        "required": ["type", "mood"],
+        "properties": {
+          "type": {"type": "string"},
+          "mood": {"type": "string"},
+          "description": {"type": "string"},
+          "key_light": {"type": "string"},
+          "fill": {"type": "string"}
+        }
+      },
+      "environment": {
+        "type": "object",
+        "required": ["type", "description"],
+        "properties": {
+          "type": {"type": "string"},
+          "description": {"type": "string"},
+          "studio_override_applied": {"type": "boolean"},
+          "colors": {"type": "array", "items": {"type": "string"}},
+          "props": {"type": "array", "items": {"type": "string"}}
+        }
+      },
+      "style": {
+        "type": "object",
+        "required": ["aesthetic", "mood"],
+        "properties": {
+          "aesthetic": {"type": "string"},
+          "color_grading": {"type": "string"},
+          "mood": {"type": "string"},
+          "references_used": {"type": "boolean"}
+        }
+      },
+      "branding": {
+        "type": "object",
+        "required": ["logo_used"],
+        "properties": {
+          "logo_used": {"type": "boolean"},
+          "placement": {"type": "string"},
+          "treatment": {"type": "string"},
+          "size": {"type": "string"}
+        }
+      },
+      "packs_applied": {
+        "type": "object",
+        "required": ["selected", "effective", "fragments"],
+        "properties": {
+          "selected": {
+            "type": "object",
+            "required": ["lens_pack", "film_texture_pack", "color_science_pack", "time_weather_pack", "pose_discipline_pack"],
+            "properties": {
+              "lens_pack": {"type": "string"},
+              "film_texture_pack": {"type": "string"},
+              "color_science_pack": {"type": "string"},
+              "time_weather_pack": {"type": "string"},
+              "pose_discipline_pack": {"type": "string"}
+            }
+          },
+          "effective": {
+            "type": "object",
+            "properties": {
+              "lens_pack": {"type": "string"},
+              "film_texture_pack": {"type": "string"},
+              "color_science_pack": {"type": "string"},
+              "time_weather_pack": {"type": "string"},
+              "pose_discipline_pack": {"type": "string"}
+            }
+          },
+          "fragments": {
+            "type": "object",
+            "required": ["lens", "film_texture", "color_science", "time_weather", "pose_discipline"],
+            "properties": {
+              "lens": {"type": "string"},
+              "film_texture": {"type": "string"},
+              "color_science": {"type": "string"},
+              "time_weather": {"type": "string"},
+              "pose_discipline": {"type": "string"}
+            }
+          }
+        }
+      },
+      "rendering": {
+        "type": "object",
+        "required": ["lens", "film_texture", "color_science", "time_weather", "pose_discipline"],
+        "properties": {
+          "lens": {"type": "string"},
+          "film_texture": {"type": "string"},
+          "color_science": {"type": "string"},
+          "time_weather": {"type": "string"},
+          "pose_discipline": {"type": "string"}
+        }
+      },
+      "intent_applied": {"type": "string"},
+      "format": {"type": "string"}
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "packs": {
+    "auto": {
+      "name": "Auto",
+      "description": "Automatic time and weather selection inferred from intent, lighting pack, environment, and narrative constraints, ensuring physical coherence and realistic light behavior.",
+      "prompt_fragment": "time of day and weather automatically inferred for realistic lighting and atmosphere",
+      "time_of_day": "auto",
+      "weather": "auto"
+    },
+    "blue_hour_winter": {
+      "name": "Blue hour winter",
+      "description": "Cold twilight conditions just after sunset, with blue ambient light and subtle warm practical accents, commonly used in winter fashion campaigns.",
+      "prompt_fragment": "blue hour winter twilight with cold ambient light and subtle warm accents",
+      "time_of_day": "blue_hour",
+      "weather": "clear"
+    },
+    "bright_midday_sun": {
+      "name": "Bright midday sun",
+      "description": "High sun angle with hard shadows and strong contrast, emphasizing structure, textures, and crisp edges.",
+      "prompt_fragment": "bright midday sunlight with hard shadows and high contrast",
+      "time_of_day": "midday",
+      "weather": "clear"
+    },
+    "deep_night_snowfall": {
+      "name": "Deep night snowfall",
+      "description": "Nighttime winter scene with falling snow visible in practical lights, low ambient exposure and cinematic atmosphere.",
+      "prompt_fragment": "deep night snowfall with low ambient light and visible falling snow",
+      "time_of_day": "night",
+      "weather": "snow"
+    },
+    "foggy_morning": {
+      "name": "Foggy morning",
+      "description": "Early morning fog creating diffused light, reduced contrast, and soft silhouettes, often used for moody editorial narratives.",
+      "prompt_fragment": "foggy morning with diffused light, soft edges, and reduced contrast",
+      "time_of_day": "morning",
+      "weather": "fog"
+    },
+    "golden_hour_clear": {
+      "name": "Golden hour clear",
+      "description": "Low-angle warm sunlight near sunset, producing long soft shadows and flattering skin tones.",
+      "prompt_fragment": "golden hour warm light with long soft shadows and clear sky",
+      "time_of_day": "golden_hour",
+      "weather": "clear"
+    },
+    "overcast_winter_daylight": {
+      "name": "Overcast winter daylight",
+      "description": "Cloud-covered winter daylight acting as a natural softbox, minimizing shadows and preserving color fidelity.",
+      "prompt_fragment": "overcast winter daylight with soft diffused light and neutral color temperature",
+      "time_of_day": "day",
+      "weather": "overcast"
+    },
+    "rainy_urban": {
+      "name": "Rainy urban",
+      "description": "Rainy conditions with wet reflective surfaces and diffused city lighting, creating depth and cinematic reflections.",
+      "prompt_fragment": "rainy urban atmosphere with wet reflections and diffused city lights",
+      "time_of_day": "any",
+      "weather": "rain"
+    },
+    "studio_controlled": {
+      "name": "Studio controlled",
+      "description": "Fully controlled studio environment with no natural time or weather influence, ensuring repeatability and consistency.",
+      "prompt_fragment": "fully controlled studio conditions with no natural time or weather influence",
+      "time_of_day": "studio",
+      "weather": "none"
+    }
+  },
+  "default": "auto"
+}

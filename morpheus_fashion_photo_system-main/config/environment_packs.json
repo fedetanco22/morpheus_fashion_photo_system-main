@@ -1,0 +1,269 @@
+{
+  "packs": {
+    "auto": {
+      "name": "Auto",
+      "description": "Environment is inferred automatically from intent, studio override, time, weather, and branding constraints, prioritizing garment readability and narrative coherence.",
+      "type": "auto",
+      "complexity": "adaptive",
+      "mood": "context-aware",
+      "prompt_fragment": "environment automatically inferred to match intent and photographic constraints"
+    },
+    "minimal_studio_cyclorama": {
+      "name": "Minimal studio cyclorama",
+      "description": "Clean seamless studio background with infinite curve, designed to remove all environmental distractions and maximize garment, fit, and silhouette readability.",
+      "type": "studio",
+      "complexity": "minimal",
+      "mood": "clean professional",
+      "prompt_fragment": "set against a minimal seamless studio cyclorama with an infinite clean background"
+    },
+    "high_key_studio": {
+      "name": "High key studio",
+      "description": "Bright studio environment with white surfaces and high reflectance, producing an airy, commercial, and highly legible look.",
+      "type": "studio",
+      "complexity": "minimal",
+      "mood": "bright commercial",
+      "prompt_fragment": "shot in a high-key studio environment with bright white surfaces"
+    },
+    "dark_editorial_studio": {
+      "name": "Dark editorial studio",
+      "description": "Controlled dark studio space used for luxury editorials, emphasizing contrast, texture, and sculptural lighting.",
+      "type": "studio",
+      "complexity": "low",
+      "mood": "dramatic restrained",
+      "prompt_fragment": "set in a dark editorial studio environment with controlled shadows"
+    },
+    "industrial_loft": {
+      "name": "Industrial loft",
+      "description": "Converted industrial interior with exposed brick, concrete floors, and metal beams, offering texture without overpowering the subject.",
+      "type": "indoor architectural",
+      "complexity": "medium",
+      "mood": "edgy sophisticated",
+      "prompt_fragment": "inside an industrial loft with exposed brick, concrete, and steel elements"
+    },
+    "modern_minimal_apartment": {
+      "name": "Modern minimal apartment",
+      "description": "Contemporary interior with clean lines, neutral palette, and soft natural light, often used in lifestyle fashion.",
+      "type": "indoor lifestyle",
+      "complexity": "low",
+      "mood": "calm modern",
+      "prompt_fragment": "inside a modern minimal apartment with clean lines and neutral tones"
+    },
+    "luxury_hotel_suite": {
+      "name": "Luxury hotel suite",
+      "description": "High-end interior with refined materials and spatial depth, conveying aspirational lifestyle and quiet luxury.",
+      "type": "indoor lifestyle",
+      "complexity": "medium",
+      "mood": "luxurious intimate",
+      "prompt_fragment": "inside a luxury hotel suite with refined materials and soft ambient light"
+    },
+    "urban_glass_steel": {
+      "name": "Urban glass and steel",
+      "description": "Contemporary city environment defined by glass facades and steel structures, creating reflections and architectural rhythm.",
+      "type": "outdoor urban",
+      "complexity": "high",
+      "mood": "modern powerful",
+      "prompt_fragment": "framed against modern urban architecture of glass and steel"
+    },
+    "historic_city_street": {
+      "name": "Historic city street",
+      "description": "Old city street with stone buildings and narrow proportions, adding cultural depth and timelessness.",
+      "type": "outdoor urban",
+      "complexity": "medium",
+      "mood": "timeless cinematic",
+      "prompt_fragment": "set on a historic city street with stone architecture"
+    },
+    "street_crosswalk": {
+      "name": "Street crosswalk",
+      "description": "Everyday urban crossing that communicates movement, realism, and candid street-style energy.",
+      "type": "outdoor urban",
+      "complexity": "medium",
+      "mood": "dynamic real",
+      "prompt_fragment": "captured at an urban street crosswalk with everyday city context"
+    },
+    "subway_platform": {
+      "name": "Subway platform",
+      "description": "Underground transit environment with strong linear perspective, artificial lighting, and raw urban character.",
+      "type": "outdoor urban",
+      "complexity": "high",
+      "mood": "gritty modern",
+      "prompt_fragment": "set on a subway platform with linear perspective and artificial lighting"
+    },
+    "winter_forest_road": {
+      "name": "Winter forest road",
+      "description": "Snowy forest path with bare trees and muted colors, conveying calm, isolation, and seasonal atmosphere.",
+      "type": "outdoor natural",
+      "complexity": "medium",
+      "mood": "serene contemplative",
+      "prompt_fragment": "positioned on a snowy winter forest road surrounded by bare trees"
+    },
+    "mountain_landscape": {
+      "name": "Mountain landscape",
+      "description": "Wide natural setting with mountains and open sky, emphasizing scale, isolation, and freedom.",
+      "type": "outdoor natural",
+      "complexity": "medium",
+      "mood": "expansive majestic",
+      "prompt_fragment": "set within a vast mountain landscape with open sky"
+    },
+    "desert_landscape": {
+      "name": "Desert landscape",
+      "description": "Minimal desert environment with open horizons and warm earth tones, used for strong silhouettes and graphic fashion.",
+      "type": "outdoor natural",
+      "complexity": "low-medium",
+      "mood": "minimal expansive",
+      "prompt_fragment": "placed in a vast desert landscape with warm earth tones"
+    },
+    "coastal_cliff": {
+      "name": "Coastal cliff",
+      "description": "Dramatic coastline with cliffs and open sea, adding wind, movement, and cinematic scale.",
+      "type": "outdoor natural",
+      "complexity": "medium",
+      "mood": "dramatic free",
+      "prompt_fragment": "shot on a coastal cliff overlooking the open sea"
+    },
+    "beach_minimal": {
+      "name": "Beach minimal",
+      "description": "Open beach with minimal visual noise, used for swimwear and summer fashion with clean horizons.",
+      "type": "outdoor natural",
+      "complexity": "low",
+      "mood": "relaxed open",
+      "prompt_fragment": "set on a minimal open beach with clean horizon lines"
+    },
+    "botanical_garden": {
+      "name": "Botanical garden",
+      "description": "Lush plant-filled environment offering organic textures and color contrast against fashion garments.",
+      "type": "outdoor natural",
+      "complexity": "high",
+      "mood": "organic luxurious",
+      "prompt_fragment": "surrounded by lush botanical garden greenery"
+    },
+    "greenhouse_glass": {
+      "name": "Greenhouse glass",
+      "description": "Glass greenhouse environment with diffused light and layered greenery, often used in editorial fashion.",
+      "type": "outdoor architectural",
+      "complexity": "high",
+      "mood": "dreamy organic",
+      "prompt_fragment": "inside a glass greenhouse with diffused natural light"
+    },
+    "museum_gallery": {
+      "name": "Museum gallery",
+      "description": "Minimal cultural interior with clean walls and controlled lighting, conveying art, heritage, and refinement.",
+      "type": "indoor cultural",
+      "complexity": "low",
+      "mood": "artistic refined",
+      "prompt_fragment": "set inside a minimal museum gallery space"
+    },
+    "fashion_runway_space": {
+      "name": "Fashion runway space",
+      "description": "Open runway or backstage environment referencing fashion show presentation without literal audience focus.",
+      "type": "indoor fashion",
+      "complexity": "medium",
+      "mood": "editorial institutional",
+      "prompt_fragment": "set in a fashion runway or backstage presentation space"
+    },
+    "backstage_dressing_room": {
+      "name": "Backstage dressing room",
+      "description": "Behind-the-scenes environment with mirrors, racks, and practical lights, communicating authenticity and preparation.",
+      "type": "indoor fashion",
+      "complexity": "high",
+      "mood": "intimate candid",
+      "prompt_fragment": "inside a fashion backstage dressing room with mirrors and garment racks"
+    },
+    "gym_training_space": {
+      "name": "Gym training space",
+      "description": "Athletic interior with functional equipment and neutral lighting, used for activewear and performance fashion.",
+      "type": "indoor sport",
+      "complexity": "medium",
+      "mood": "focused energetic",
+      "prompt_fragment": "set in a gym or training space with functional equipment"
+    },
+    "yoga_studio": {
+      "name": "Yoga studio",
+      "description": "Calm wellness interior with clean floors and soft light, supporting grounded and mindful poses.",
+      "type": "indoor wellness",
+      "complexity": "low",
+      "mood": "calm balanced",
+      "prompt_fragment": "inside a calm yoga studio with soft natural light"
+    },
+    "open_road": {
+      "name": "Open road",
+      "description": "Empty road environment symbolizing freedom, journey, and movement, often used in campaign storytelling.",
+      "type": "outdoor lifestyle",
+      "complexity": "low",
+      "mood": "open cinematic",
+      "prompt_fragment": "on an open empty road with expansive surroundings"
+    },
+    "parking_structure": {
+      "name": "Parking structure",
+      "description": "Concrete multi-level structure with strong geometry and shadows, frequently used in urban fashion editorials.",
+      "type": "outdoor urban",
+      "complexity": "medium",
+      "mood": "raw graphic",
+      "prompt_fragment": "inside a concrete parking structure with strong geometric lines"
+    },
+    "rooftop_city": {
+      "name": "Rooftop city",
+      "description": "Elevated city viewpoint offering skyline context and clean separation between subject and background.",
+      "type": "outdoor urban",
+      "complexity": "medium",
+      "mood": "aspirational modern",
+      "prompt_fragment": "shot on a city rooftop with skyline in the background"
+    },
+    "countryside_field": {
+      "name": "Countryside field",
+      "description": "Open rural field with natural textures and horizon lines, offering softness and authenticity.",
+      "type": "outdoor natural",
+      "complexity": "low",
+      "mood": "quiet pastoral",
+      "prompt_fragment": "set in an open countryside field with natural textures"
+    },
+    "warehouse_empty": {
+      "name": "Empty warehouse",
+      "description": "Large empty interior with raw surfaces and scale, used for dramatic fashion and movement-focused shots.",
+      "type": "indoor industrial",
+      "complexity": "medium",
+      "mood": "raw expansive",
+      "prompt_fragment": "inside an empty warehouse with raw industrial surfaces"
+    },
+    "theater_stage": {
+      "name": "Theater stage",
+      "description": "Stage environment with controlled lighting and deep space, blending performance and fashion presentation.",
+      "type": "indoor cultural",
+      "complexity": "high",
+      "mood": "dramatic performative",
+      "prompt_fragment": "on a theater stage with controlled dramatic lighting"
+    },
+    "library_architectural": {
+      "name": "Architectural library",
+      "description": "Quiet architectural interior with books, symmetry, and cultural weight, used for intellectual luxury narratives.",
+      "type": "indoor cultural",
+      "complexity": "medium",
+      "mood": "intellectual refined",
+      "prompt_fragment": "inside an architectural library with structured symmetry"
+    },
+    "art_installation_space": {
+      "name": "Art installation space",
+      "description": "Contemporary art space with sculptural elements, used for conceptual and experimental fashion campaigns.",
+      "type": "indoor cultural",
+      "complexity": "high",
+      "mood": "conceptual avant-garde",
+      "prompt_fragment": "set within a contemporary art installation space"
+    },
+    "residential_staircase": {
+      "name": "Residential staircase",
+      "description": "Interior staircase offering verticality and movement, often used in lifestyle and editorial fashion.",
+      "type": "indoor lifestyle",
+      "complexity": "medium",
+      "mood": "transitional natural",
+      "prompt_fragment": "positioned on a residential staircase with natural light"
+    },
+    "balcony_overlook": {
+      "name": "Balcony overlook",
+      "description": "Semi-outdoor space connecting interior and exterior, useful for intimate lifestyle fashion moments.",
+      "type": "outdoor lifestyle",
+      "complexity": "low",
+      "mood": "intimate reflective",
+      "prompt_fragment": "on a balcony overlooking the surrounding environment"
+    }
+  },
+  "default": "auto"
+}
